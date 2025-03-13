@@ -1,25 +1,14 @@
 const gTTS = require('gtts');
-const fs = require('fs').promises;
 const path = require('path');
-
-function slugify(text) {
-    return text
-        .toString()
-        .toLowerCase()
-        .replace(/\s+/g, '-')
-        .replace(/[^\w\-]+/g, '')
-        .replace(/\-\-+/g, '-')
-        .trim();
-}
+const { slugify } = require('./slugify');
 
 exports.toTTS = async (text, lang = 'en') => {
-    const dir = path.join(__dirname, 'audio_files');
+    // eslint-disable-next-line no-undef
+    const dir = path.join(__dirname, '../audio_files');
 
     try {
-        await fs.mkdir(dir, { recursive: true });
-
-        const slugifiedText = slugify(text);
-        const uniqueFileName = `${slugifiedText}.mp3`;
+        const slugText = slugify(text);
+        const uniqueFileName = `${slugText}.mp3`;
         const filePath = path.join(dir, uniqueFileName);
 
         const speech = new gTTS(text, lang);

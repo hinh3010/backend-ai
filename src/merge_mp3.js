@@ -1,15 +1,4 @@
 const ffmpeg = require('fluent-ffmpeg');
-const path = require('path');
-
-// Đường dẫn đến các file MP3
-const inputFiles = [
-    path.join(__dirname, 'audio_files/bn-c-mun-n-chi-khng.mp3'),
-    path.join(__dirname, 'audio_files/do-you-want-to-come-over.mp3'),
-    path.join(__dirname, 'audio_files/do-you-want-to.mp3')
-];
-
-// File đầu ra
-const outputFile = 'output.mp3';
 
 // Hàm để thêm silence (khoảng lặng) 2 giây
 function addSilence() {
@@ -17,15 +6,15 @@ function addSilence() {
         ffmpeg()
             .input('anullsrc=r=44100:cl=stereo') // Tạo nguồn âm thanh lặng
             .inputFormat('lavfi')
-            .duration(2) // 2 giây
+            .duration(3) // 3s
             .format('mp3')
             .on('end', resolve)
             .save('silence.mp3');
     });
 }
 
-// Hàm merge files
-async function mergeAudioFiles() {
+// Merge files
+exports.mergeAudioFiles = async ({ inputFiles, outputFile }) => {
     try {
         // Tạo file silence trước
         await addSilence();
@@ -73,9 +62,7 @@ async function mergeAudioFiles() {
             .save(outputFile);
 
     } catch (error) {
-        console.error('Lỗi:', error);
+        console.error('Có lỗi xảy ra:', error);
+        throw error;
     }
 }
-
-// Chạy hàm
-mergeAudioFiles();
