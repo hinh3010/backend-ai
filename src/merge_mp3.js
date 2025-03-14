@@ -1,23 +1,27 @@
 const ffmpeg = require('fluent-ffmpeg');
+const fs = require('fs');
 
-// Hàm để thêm silence (khoảng lặng) 2 giây
-function addSilence() {
+function addSilence(silenceFile) {
     return new Promise((resolve) => {
+        if (fs.existsSync(silenceFile)) {
+            console.log('File silence đã tồn tại, không cần tạo mới.');
+            return resolve()
+        }
         ffmpeg()
             .input('anullsrc=r=44100:cl=stereo') // Tạo nguồn âm thanh lặng
             .inputFormat('lavfi')
             .duration(3) // 3s
             .format('mp3')
             .on('end', resolve)
-            .save('silence.mp3');
+            .save(silenceFile);
     });
 }
 
 // Merge files
-exports.mergeAudioFiles = async ({ inputFiles, outputFile }) => {
+exports.mergeAudioFiles = async ({ inputFiles, outputFile, silenceFile }) => {
     try {
         // Tạo file silence trước
-        await addSilence();
+        await addSilence(silenceFile);
 
         // Tạo command ffmpeg
         const command = ffmpeg();
@@ -27,7 +31,7 @@ exports.mergeAudioFiles = async ({ inputFiles, outputFile }) => {
             command.input(file);
             // Thêm silence sau mỗi file trừ file cuối cùng
             if (index < inputFiles.length - 1) {
-                command.input('silence.mp3');
+                command.input(silenceFile);
             }
         });
 
@@ -56,8 +60,6 @@ exports.mergeAudioFiles = async ({ inputFiles, outputFile }) => {
             })
             .on('end', () => {
                 console.log('Merge hoàn tất!');
-                // Xóa file silence tạm thời
-                require('fs').unlinkSync('silence.mp3');
             })
             .save(outputFile);
 

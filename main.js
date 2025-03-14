@@ -14,33 +14,35 @@ const { slugify } = require('./src/slugify');
     const imageDir = path.join(__dirname, 'image_files')
     // eslint-disable-next-line no-undef
     const videoDir = path.join(__dirname, 'video_files')
-    
+
     fs.mkdirSync(audioDir, { recursive: true })
     fs.mkdirSync(videoDir, { recursive: true })
     fs.mkdirSync(imageDir, { recursive: true })
     
     for (const item of config) {
-        const { english, vietnamese, pronunciation, subject, thumbnail } = item
+        const { english, vietnamese, subject, thumbnail } = item
 
         // Tạo file âm thanh
-        const [subjectFile, englishFile, vietnameseFile, pronunciationFile] = await Promise.all([
+        const [subjectFile, englishFile, vietnameseFile] = await Promise.all([
             toTTS(subject, 'en'),
             toTTS(english, 'en'),
             toTTS(vietnamese, 'vi'),
-            toTTS(pronunciation, 'en'),
         ])
 
         // Merge file âm thanh
         await mergeAudioFiles({
             inputFiles: [subjectFile, englishFile, vietnameseFile],
-            outputFile: path.join(audioDir, slugify(subject))
+            outputFile: path.join(audioDir, `${slugify(english)}_merge.mp3`),
+            silenceFile: path.join(audioDir, 'silence.mp3')
         })
-
-        const image = path.join(imageDir, thumbnail)
 
         // Tạo worker thread để xử lý video
         const worker = new Worker('./worker.js', {
-            workerData: { image, audioList: [subjectFile, englishFile, vietnameseFile, pronunciationFile], name: english }
+            workerData: { 
+                imageFile: path.join(imageDir, thumbnail), 
+                audioFile: path.join(audioDir, `${slugify(english)}_merge.mp3`), 
+                outputFile: path.join(videoDir, `${slugify(english)}_merge.mp4`)
+            }
         });
 
         worker.on('message', (msg) => console.log(msg));
