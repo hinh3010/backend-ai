@@ -19,10 +19,10 @@ function addSilence(silenceFile) {
 
 // Merge files
 exports.mergeAudioFiles = async ({ inputFiles, outputFile, silenceFile }) => {
-    try {
-        // Tạo file silence trước
-        await addSilence(silenceFile);
+    // Tạo file silence trước
+    await addSilence(silenceFile);
 
+    return new Promise((resolve, reject) => {
         // Tạo command ffmpeg
         const command = ffmpeg();
 
@@ -57,14 +57,12 @@ exports.mergeAudioFiles = async ({ inputFiles, outputFile, silenceFile }) => {
             })
             .on('error', (err) => {
                 console.error('Lỗi:', err.message);
+                reject(err);
             })
             .on('end', () => {
                 console.log('Merge hoàn tất!');
+                resolve(outputFile);
             })
             .save(outputFile);
-
-    } catch (error) {
-        console.error('Có lỗi xảy ra:', error);
-        throw error;
-    }
+    });
 }
