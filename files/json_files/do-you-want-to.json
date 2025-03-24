@@ -1,0 +1,602 @@
+[
+    {
+        "id": 1,
+        "question": "Do you want to go out tonight?",
+        "phonetic": "/du jə wɒnt tə ɡoʊ aʊt təˈnaɪt/",
+        "translation": "Bạn có muốn ra ngoài tối nay không?"
+    },
+    {
+        "id": 2,
+        "question": "Do you want to eat something?",
+        "phonetic": "/du jə wɒnt tə iːt ˈsʌmθɪŋ/",
+        "translation": "Bạn có muốn ăn gì không?"
+    },
+    {
+        "id": 3,
+        "question": "Do you want to call me later?",
+        "phonetic": "/du jə wɒnt tə kɔːl miː ˈleɪtər/",
+        "translation": "Bạn có muốn gọi cho tôi sau không?"
+    },
+    {
+        "id": 4,
+        "question": "Do you want to join us?",
+        "phonetic": "/du jə wɒnt tə dʒɔɪn ʌs/",
+        "translation": "Bạn có muốn tham gia cùng chúng tôi không?"
+    },
+    {
+        "id": 5,
+        "question": "Do you want to take a break?",
+        "phonetic": "/du jə wɒnt tə teɪk ə breɪk/",
+        "translation": "Bạn có muốn nghỉ ngơi không?"
+    },
+    {
+        "id": 6,
+        "question": "Do you want to try this?",
+        "phonetic": "/du jə wɒnt tə traɪ ðɪs/",
+        "translation": "Bạn có muốn thử cái này không?"
+    },
+    {
+        "id": 7,
+        "question": "Do you want to come with me?",
+        "phonetic": "/du jə wɒnt tə kʌm wɪð miː/",
+        "translation": "Bạn có muốn đi cùng tôi không?"
+    },
+    {
+        "id": 8,
+        "question": "Do you want to see a movie?",
+        "phonetic": "/du jə wɒnt tə siː ə ˈmuːvi/",
+        "translation": "Bạn có muốn xem phim không?"
+    },
+    {
+        "id": 9,
+        "question": "Do you want to play a game?",
+        "phonetic": "/du jə wɒnt tə pleɪ ə ɡeɪm/",
+        "translation": "Bạn có muốn chơi một trò chơi không?"
+    },
+    {
+        "id": 10,
+        "question": "Do you want to talk about it?",
+        "phonetic": "/du jə wɒnt tə tɔːk əˈbaʊt ɪt/",
+        "translation": "Bạn có muốn nói về chuyện đó không?"
+    },
+    {
+        "id": 11,
+        "question": "Do you want to go shopping?",
+        "phonetic": "/du jə wɒnt tə ɡoʊ ˈʃɒpɪŋ/",
+        "translation": "Bạn có muốn đi mua sắm không?"
+    },
+    {
+        "id": 12,
+        "question": "Do you want to visit your parents?",
+        "phonetic": "/du jə wɒnt tə ˈvɪzɪt jɔːr ˈpeərənts/",
+        "translation": "Bạn có muốn thăm bố mẹ bạn không?"
+    },
+    {
+        "id": 13,
+        "question": "Do you want to learn something new?",
+        "phonetic": "/du jə wɒnt tə lɜːrn ˈsʌmθɪŋ njuː/",
+        "translation": "Bạn có muốn học điều gì mới không?"
+    },
+    {
+        "id": 14,
+        "question": "Do you want to stay here?",
+        "phonetic": "/du jə wɒnt tə steɪ hɪr/",
+        "translation": "Bạn có muốn ở lại đây không?"
+    },
+    {
+        "id": 15,
+        "question": "Do you want to help me?",
+        "phonetic": "/du jə wɒnt tə help miː/",
+        "translation": "Bạn có muốn giúp tôi không?"
+    },
+    {
+        "id": 16,
+        "question": "Do you want to dance with me?",
+        "phonetic": "/du jə wɒnt tə dæns wɪð miː/",
+        "translation": "Bạn có muốn nhảy cùng tôi không?"
+    },
+    {
+        "id": 17,
+        "question": "Do you want to read a book?",
+        "phonetic": "/du jə wɒnt tə riːd ə bʊk/",
+        "translation": "Bạn có muốn đọc sách không?"
+    },
+    {
+        "id": 18,
+        "question": "Do you want to cook dinner?",
+        "phonetic": "/du jə wɒnt tə kʊk ˈdɪnər/",
+        "translation": "Bạn có muốn nấu bữa tối không?"
+    },
+    {
+        "id": 19,
+        "question": "Do you want to travel somewhere?",
+        "phonetic": "/du jə wɒnt tə ˈtrævəl ˈsʌmweər/",
+        "translation": "Bạn có muốn đi du lịch đâu đó không?"
+    },
+    {
+        "id": 20,
+        "question": "Do you want to meet my friends?",
+        "phonetic": "/du jə wɒnt tə miːt maɪ frendz/",
+        "translation": "Bạn có muốn gặp bạn bè của tôi không?"
+    },
+    {
+        "id": 21,
+        "question": "Do you want to listen to music?",
+        "phonetic": "/du jə wɒnt tə ˈlɪsən tə ˈmjuːzɪk/",
+        "translation": "Bạn có muốn nghe nhạc không?"
+    },
+    {
+        "id": 22,
+        "question": "Do you want to watch TV?",
+        "phonetic": "/du jə wɒnt tə wɒtʃ tiːˈviː/",
+        "translation": "Bạn có muốn xem TV không?"
+    },
+    {
+        "id": 23,
+        "question": "Do you want to go for a walk?",
+        "phonetic": "/du jə wɒnt tə ɡoʊ fər ə wɔːk/",
+        "translation": "Bạn có muốn đi dạo không?"
+    },
+    {
+        "id": 24,
+        "question": "Do you want to sleep now?",
+        "phonetic": "/du jə wɒnt tə sliːp naʊ/",
+        "translation": "Bạn có muốn ngủ bây giờ không?"
+    },
+    {
+        "id": 25,
+        "question": "Do you want to study English?",
+        "phonetic": "/du jə wɒnt tə ˈstʌdi ˈɪŋɡlɪʃ/",
+        "translation": "Bạn có muốn học tiếng Anh không?"
+    },
+    {
+        "id": 26,
+        "question": "Do you want to drive somewhere?",
+        "phonetic": "/du jə wɒnt tə draɪv ˈsʌmweər/",
+        "translation": "Bạn có muốn lái xe đi đâu đó không?"
+    },
+    {
+        "id": 27,
+        "question": "Do you want to buy something?",
+        "phonetic": "/du jə wɒnt tə baɪ ˈsʌmθɪŋ/",
+        "translation": "Bạn có muốn mua gì không?"
+    },
+    {
+        "id": 28,
+        "question": "Do you want to work with me?",
+        "phonetic": "/du jə wɒnt tə wɜːrk wɪð miː/",
+        "translation": "Bạn có muốn làm việc cùng tôi không?"
+    },
+    {
+        "id": 29,
+        "question": "Do you want to swim today?",
+        "phonetic": "/du jə wɒnt tə swɪm təˈdeɪ/",
+        "translation": "Bạn có muốn bơi hôm nay không?"
+    },
+    {
+        "id": 30,
+        "question": "Do you want to take a picture?",
+        "phonetic": "/du jə wɒnt tə teɪk ə ˈpɪktʃər/",
+        "translation": "Bạn có muốn chụp ảnh không?"
+    },
+    {
+        "id": 31,
+        "question": "Do you want to run with me?",
+        "phonetic": "/du jə wɒnt tə rʌn wɪð miː/",
+        "translation": "Bạn có muốn chạy cùng tôi không?"
+    },
+    {
+        "id": 32,
+        "question": "Do you want to sing a song?",
+        "phonetic": "/du jə wɒnt tə sɪŋ ə sɒŋ/",
+        "translation": "Bạn có muốn hát một bài không?"
+    },
+    {
+        "id": 33,
+        "question": "Do you want to paint something?",
+        "phonetic": "/du jə wɒnt tə peɪnt ˈsʌmθɪŋ/",
+        "translation": "Bạn có muốn vẽ gì không?"
+    },
+    {
+        "id": 34,
+        "question": "Do you want to clean the house?",
+        "phonetic": "/du jə wɒnt tə kliːn ðə haʊs/",
+        "translation": "Bạn có muốn dọn nhà không?"
+    },
+    {
+        "id": 35,
+        "question": "Do you want to start now?",
+        "phonetic": "/du jə wɒnt tə stɑːrt naʊ/",
+        "translation": "Bạn có muốn bắt đầu bây giờ không?"
+    },
+    {
+        "id": 36,
+        "question": "Do you want to finish this?",
+        "phonetic": "/du jə wɒnt tə ˈfɪnɪʃ ðɪs/",
+        "translation": "Bạn có muốn hoàn thành cái này không?"
+    },
+    {
+        "id": 37,
+        "question": "Do you want to wait for me?",
+        "phonetic": "/du jə wɒnt tə weɪt fər miː/",
+        "translation": "Bạn có muốn đợi tôi không?"
+    },
+    {
+        "id": 38,
+        "question": "Do you want to sit down?",
+        "phonetic": "/du jə wɒnt tə sɪt daʊn/",
+        "translation": "Bạn có muốn ngồi xuống không?"
+    },
+    {
+        "id": 39,
+        "question": "Do you want to stand up?",
+        "phonetic": "/du jə wɒnt tə stænd ʌp/",
+        "translation": "Bạn có muốn đứng lên không?"
+    },
+    {
+        "id": 40,
+        "question": "Do you want to try again?",
+        "phonetic": "/du jə wɒnt tə traɪ əˈɡen/",
+        "translation": "Bạn có muốn thử lại không?"
+    },
+    {
+        "id": 41,
+        "question": "Do you want to go home?",
+        "phonetic": "/du jə wɒnt tə ɡoʊ hoʊm/",
+        "translation": "Bạn có muốn về nhà không?"
+    },
+    {
+        "id": 42,
+        "question": "Do you want to leave now?",
+        "phonetic": "/du jə wɒnt tə liːv naʊ/",
+        "translation": "Bạn có muốn rời đi bây giờ không?"
+    },
+    {
+        "id": 43,
+        "question": "Do you want to stay longer?",
+        "phonetic": "/du jə wɒnt tə steɪ ˈlɒŋɡər/",
+        "translation": "Bạn có muốn ở lại lâu hơn không?"
+    },
+    {
+        "id": 44,
+        "question": "Do you want to check this out?",
+        "phonetic": "/du jə wɒnt tə tʃek ðɪs aʊt/",
+        "translation": "Bạn có muốn xem cái này không?"
+    },
+    {
+        "id": 45,
+        "question": "Do you want to order food?",
+        "phonetic": "/du jə wɒnt tə ˈɔːrdər fuːd/",
+        "translation": "Bạn có muốn gọi món ăn không?"
+    },
+    {
+        "id": 46,
+        "question": "Do you want to drink water?",
+        "phonetic": "/du jə wɒnt tə drɪŋk ˈwɔːtər/",
+        "translation": "Bạn có muốn uống nước không?"
+    },
+    {
+        "id": 47,
+        "question": "Do you want to ride a bike?",
+        "phonetic": "/du jə wɒnt tə raɪd ə baɪk/",
+        "translation": "Bạn có muốn đạp xe không?"
+    },
+    {
+        "id": 48,
+        "question": "Do you want to hike this weekend?",
+        "phonetic": "/du jə wɒnt tə haɪk ðɪs ˈwiːkend/",
+        "translation": "Bạn có muốn đi bộ đường dài cuối tuần này không?"
+    },
+    {
+        "id": 49,
+        "question": "Do you want to play soccer?",
+        "phonetic": "/du jə wɒnt tə pleɪ ˈsɒkər/",
+        "translation": "Bạn có muốn chơi bóng đá không?"
+    },
+    {
+        "id": 50,
+        "question": "Do you want to visit the museum?",
+        "phonetic": "/du jə wɒnt tə ˈvɪzɪt ðə mjuˈziːəm/",
+        "translation": "Bạn có muốn thăm bảo tàng không?"
+    },
+    {
+        "id": 51,
+        "question": "Do you want to write a letter?",
+        "phonetic": "/du jə wɒnt tə raɪt ə ˈletər/",
+        "translation": "Bạn có muốn viết thư không?"
+    },
+    {
+        "id": 52,
+        "question": "Do you want to draw something?",
+        "phonetic": "/du jə wɒnt tə drɔː ˈsʌmθɪŋ/",
+        "translation": "Bạn có muốn vẽ gì không?"
+    },
+    {
+        "id": 53,
+        "question": "Do you want to bake a cake?",
+        "phonetic": "/du jə wɒnt tə beɪk ə keɪk/",
+        "translation": "Bạn có muốn nướng bánh không?"
+    },
+    {
+        "id": 54,
+        "question": "Do you want to fix this?",
+        "phonetic": "/du jə wɒnt tə fɪks ðɪs/",
+        "translation": "Bạn có muốn sửa cái này không?"
+    },
+    {
+        "id": 55,
+        "question": "Do you want to share this?",
+        "phonetic": "/du jə wɒnt tə ʃeər ðɪs/",
+        "translation": "Bạn có muốn chia sẻ cái này không?"
+    },
+    {
+        "id": 56,
+        "question": "Do you want to talk to him?",
+        "phonetic": "/du jə wɒnt tə tɔːk tə hɪm/",
+        "translation": "Bạn có muốn nói chuyện với anh ấy không?"
+    },
+    {
+        "id": 57,
+        "question": "Do you want to meet tomorrow?",
+        "phonetic": "/du jə wɒnt tə miːt təˈmɒroʊ/",
+        "translation": "Bạn có muốn gặp ngày mai không?"
+    },
+    {
+        "id": 58,
+        "question": "Do you want to go to bed?",
+        "phonetic": "/du jə wɒnt tə ɡoʊ tə bed/",
+        "translation": "Bạn có muốn đi ngủ không?"
+    },
+    {
+        "id": 59,
+        "question": "Do you want to exercise today?",
+        "phonetic": "/du jə wɒnt tə ˈeksərsaɪz təˈdeɪ/",
+        "translation": "Bạn có muốn tập thể dục hôm nay không?"
+    },
+    {
+        "id": 60,
+        "question": "Do you want to watch the sunset?",
+        "phonetic": "/du jə wɒnt tə wɒtʃ ðə ˈsʌnset/",
+        "translation": "Bạn có muốn xem hoàng hôn không?"
+    },
+    {
+        "id": 61,
+        "question": "Do you want to play cards?",
+        "phonetic": "/du jə wɒnt tə pleɪ kɑːrdz/",
+        "translation": "Bạn có muốn chơi bài không?"
+    },
+    {
+        "id": 62,
+        "question": "Do you want to visit the park?",
+        "phonetic": "/du jə wɒnt tə ˈvɪzɪt ðə pɑːrk/",
+        "translation": "Bạn có muốn thăm công viên không?"
+    },
+    {
+        "id": 63,
+        "question": "Do you want to take a nap?",
+        "phonetic": "/du jə wɒnt tə teɪk ə næp/",
+        "translation": "Bạn có muốn chợp mắt không?"
+    },
+    {
+        "id": 64,
+        "question": "Do you want to go fishing?",
+        "phonetic": "/du jə wɒnt tə ɡoʊ ˈfɪʃɪŋ/",
+        "translation": "Bạn có muốn đi câu cá không?"
+    },
+    {
+        "id": 65,
+        "question": "Do you want to learn to cook?",
+        "phonetic": "/du jə wɒnt tə lɜːrn tə kʊk/",
+        "translation": "Bạn có muốn học nấu ăn không?"
+    },
+    {
+        "id": 66,
+        "question": "Do you want to try yoga?",
+        "phonetic": "/du jə wɒnt tə traɪ ˈjoʊɡə/",
+        "translation": "Bạn có muốn thử yoga không?"
+    },
+    {
+        "id": 67,
+        "question": "Do you want to watch a game?",
+        "phonetic": "/du jə wɒnt tə wɒtʃ ə ɡeɪm/",
+        "translation": "Bạn có muốn xem một trận đấu không?"
+    },
+    {
+        "id": 68,
+        "question": "Do you want to go camping?",
+        "phonetic": "/du jə wɒnt tə ɡoʊ ˈkæmpɪŋ/",
+        "translation": "Bạn có muốn đi cắm trại không?"
+    },
+    {
+        "id": 69,
+        "question": "Do you want to call your mom?",
+        "phonetic": "/du jə wɒnt tə kɔːl jɔːr mɒm/",
+        "translation": "Bạn có muốn gọi cho mẹ bạn không?"
+    },
+    {
+        "id": 70,
+        "question": "Do you want to eat out?",
+        "phonetic": "/du jə wɒnt tə iːt aʊt/",
+        "translation": "Bạn có muốn ăn ngoài không?"
+    },
+    {
+        "id": 71,
+        "question": "Do you want to take a shower?",
+        "phonetic": "/du jə wɒnt tə teɪk ə ˈʃaʊər/",
+        "translation": "Bạn có muốn tắm không?"
+    },
+    {
+        "id": 72,
+        "question": "Do you want to visit the beach?",
+        "phonetic": "/du jə wɒnt tə ˈvɪzɪt ðə biːtʃ/",
+        "translation": "Bạn có muốn đến bãi biển không?"
+    },
+    {
+        "id": 73,
+        "question": "Do you want to play music?",
+        "phonetic": "/du jə wɒnt tə pleɪ ˈmjuːzɪk/",
+        "translation": "Bạn có muốn chơi nhạc không?"
+    },
+    {
+        "id": 74,
+        "question": "Do you want to go jogging?",
+        "phonetic": "/du jə wɒnt tə ɡoʊ ˈdʒɒɡɪŋ/",
+        "translation": "Bạn có muốn đi chạy bộ không?"
+    },
+    {
+        "id": 75,
+        "question": "Do you want to watch a show?",
+        "phonetic": "/du jə wɒnt tə wɒtʃ ə ʃoʊ/",
+        "translation": "Bạn có muốn xem một chương trình không?"
+    },
+    {
+        "id": 76,
+        "question": "Do you want to learn a language?",
+        "phonetic": "/du jə wɒnt tə lɜːrn ə ˈlæŋɡwɪdʒ/",
+        "translation": "Bạn có muốn học một ngôn ngữ không?"
+    },
+    {
+        "id": 77,
+        "question": "Do you want to take a class?",
+        "phonetic": "/du jə wɒnt tə teɪk ə klæs/",
+        "translation": "Bạn có muốn tham gia một lớp học không?"
+    },
+    {
+        "id": 78,
+        "question": "Do you want to go to the gym?",
+        "phonetic": "/du jə wɒnt tə ɡoʊ tə ðə dʒɪm/",
+        "translation": "Bạn có muốn đến phòng gym không?"
+    },
+    {
+        "id": 79,
+        "question": "Do you want to try dancing?",
+        "phonetic": "/du jə wɒnt tə traɪ ˈdænsɪŋ/",
+        "translation": "Bạn có muốn thử nhảy không?"
+    },
+    {
+        "id": 80,
+        "question": "Do you want to visit a friend?",
+        "phonetic": "/du jə wɒnt tə ˈvɪzɪt ə frend/",
+        "translation": "Bạn có muốn thăm một người bạn không?"
+    },
+    {
+        "id": 81,
+        "question": "Do you want to play chess?",
+        "phonetic": "/du jə wɒnt tə pleɪ tʃes/",
+        "translation": "Bạn có muốn chơi cờ vua không?"
+    },
+    {
+        "id": 82,
+        "question": "Do you want to go to a party?",
+        "phonetic": "/du jə wɒnt tə ɡoʊ tə ə ˈpɑːrti/",
+        "translation": "Bạn có muốn đến một bữa tiệc không?"
+    },
+    {
+        "id": 83,
+        "question": "Do you want to watch the stars?",
+        "phonetic": "/du jə wɒnt tə wɒtʃ ðə stɑːrz/",
+        "translation": "Bạn có muốn ngắm sao không?"
+    },
+    {
+        "id": 84,
+        "question": "Do you want to try a new restaurant?",
+        "phonetic": "/du jə wɒnt tə traɪ ə njuː ˈrestrɒnt/",
+        "translation": "Bạn có muốn thử một nhà hàng mới không?"
+    },
+    {
+        "id": 85,
+        "question": "Do you want to go skiing?",
+        "phonetic": "/du jə wɒnt tə ɡoʊ ˈskiːɪŋ/",
+        "translation": "Bạn có muốn đi trượt tuyết không?"
+    },
+    {
+        "id": 86,
+        "question": "Do you want to read the news?",
+        "phonetic": "/du jə wɒnt tə riːd ðə njuːz/",
+        "translation": "Bạn có muốn đọc tin tức không?"
+    },
+    {
+        "id": 87,
+        "question": "Do you want to take a trip?",
+        "phonetic": "/du jə wɒnt tə teɪk ə trɪp/",
+        "translation": "Bạn có muốn đi du lịch không?"
+    },
+    {
+        "id": 88,
+        "question": "Do you want to watch a concert?",
+        "phonetic": "/du jə wɒnt tə wɒtʃ ə ˈkɒnsərt/",
+        "translation": "Bạn có muốn xem buổi hòa nhạc không?"
+    },
+    {
+        "id": 89,
+        "question": "Do you want to go to school?",
+        "phonetic": "/du jə wɒnt tə ɡoʊ tə skuːl/",
+        "translation": "Bạn có muốn đến trường không?"
+    },
+    {
+        "id": 90,
+        "question": "Do you want to try painting?",
+        "phonetic": "/du jə wɒnt tə traɪ ˈpeɪntɪŋ/",
+        "translation": "Bạn có muốn thử vẽ tranh không?"
+    },
+    {
+        "id": 91,
+        "question": "Do you want to visit the zoo?",
+        "phonetic": "/du jə wɒnt tə ˈvɪzɪt ðə zuː/",
+        "translation": "Bạn có muốn thăm sở thú không?"
+    },
+    {
+        "id": 92,
+        "question": "Do you want to play tennis?",
+        "phonetic": "/du jə wɒnt tə pleɪ ˈtenɪs/",
+        "translation": "Bạn có muốn chơi tennis không?"
+    },
+    {
+        "id": 93,
+        "question": "Do you want to go to the mall?",
+        "phonetic": "/du jə wɒnt tə ɡoʊ tə ðə mɔːl/",
+        "translation": "Bạn có muốn đến trung tâm thương mại không?"
+    },
+    {
+        "id": 94,
+        "question": "Do you want to watch a play?",
+        "phonetic": "/du jə wɒnt tə wɒtʃ ə pleɪ/",
+        "translation": "Bạn có muốn xem một vở kịch không?"
+    },
+    {
+        "id": 95,
+        "question": "Do you want to try cooking?",
+        "phonetic": "/du jə wɒnt tə traɪ ˈkʊkɪŋ/",
+        "translation": "Bạn có muốn thử nấu ăn không?"
+    },
+    {
+        "id": 96,
+        "question": "Do you want to go to work?",
+        "phonetic": "/du jə wɒnt tə ɡoʊ tə wɜːrk/",
+        "translation": "Bạn có muốn đi làm không?"
+    },
+    {
+        "id": 97,
+        "question": "Do you want to visit the city?",
+        "phonetic": "/du jə wɒnt tə ˈvɪzɪt ðə ˈsɪti/",
+        "translation": "Bạn có muốn thăm thành phố không?"
+    },
+    {
+        "id": 98,
+        "question": "Do you want to play a video game?",
+        "phonetic": "/du jə wɒnt tə pleɪ ə ˈvɪdioʊ ɡeɪm/",
+        "translation": "Bạn có muốn chơi trò chơi điện tử không?"
+    },
+    {
+        "id": 99,
+        "question": "Do you want to go to the library?",
+        "phonetic": "/du jə wɒnt tə ɡoʊ tə ðə ˈlaɪbrəri/",
+        "translation": "Bạn có muốn đến thư viện không?"
+    },
+    {
+        "id": 100,
+        "question": "Do you want to relax today?",
+        "phonetic": "/du jə wɒnt tə rɪˈlæks təˈdeɪ/",
+        "translation": "Bạn có muốn thư giãn hôm nay không?"
+    }
+]

@@ -8,39 +8,38 @@ const { slugify } = require('../helper/slugify');
 
 async function processItem(data) {
     const { item, audioDir, imageDir, videoDir, libDir } = data;
-    console.log({ audioDir, imageDir, videoDir, libDir })
     const { english, vietnamese, subject, thumbnail } = item;
 
     try {
-        parentPort.postMessage(`⏳ Đang tạo file âm thanh cho "${english}"...`);
+        parentPort.postMessage(`⏳ Creating audio file for "${english}"...`);
         const [subjectFile, englishFile, vietnameseFile] = await Promise.all([
             toTTS(subject, 'en'),
             toTTS(english, 'en'),
             toTTS(vietnamese, 'vi'),
         ]);
 
-        parentPort.postMessage(`⏳ Đang ghép file âm thanh cho "${english}"...`);
+        parentPort.postMessage(`⏳ Merging audio files for "${english}"...`);
         const mergedAudioFile = path.join(audioDir, `${slugify(english)}_merge.mp3`);
         await mergeAudioFiles({
             inputFiles: [subjectFile, englishFile, vietnameseFile],
             outputFile: mergedAudioFile,
-            silenceFile: path.join(libDir, 'silence.mp3')
+            silenceFile: path.join(libDir, 'silence_3s.mp3')
         });
 
         if (!fs.existsSync(mergedAudioFile)) {
-            throw new Error(`File âm thanh đã merge không tồn tại: ${mergedAudioFile}`);
+            throw new Error(`Merged audio file does not exist: ${mergedAudioFile}`);
         }
 
-        parentPort.postMessage(`⏳ Đang tạo video cho "${english}"...`);
+        parentPort.postMessage(`⏳ Creating video for "${english}"...`);
         const imageFile = path.join(imageDir, thumbnail);
         const outputFile = path.join(videoDir, `${slugify(english)}_merge.mp4`);
 
         await createVideoFromImageAndAudio(imageFile, mergedAudioFile, outputFile);
 
-        parentPort.postMessage(`✅ Đã hoàn thành xử lý cho "${english}"`);
+        parentPort.postMessage(`✅ Finished processing for "${english}"`);
         return { success: true, english };
     } catch (error) {
-        parentPort.postMessage(`❌ Lỗi khi xử lý "${english}": ${error.message}`);
+        parentPort.postMessage(`❌ Error processing "${english}": ${error.message}`);
         return { success: false, english, error: error.message };
     }
 }
@@ -64,10 +63,10 @@ function createVideoFromImageAndAudio(imageFile, audioFile, outputFile) {
                 console.log(`Processing: ${progress.frames} frames`);
             })
             .on('error', (err) => {
-                reject(new Error(`FFmpeg lỗi: ${err.message}`));
+                reject(new Error(`FFmpeg error: ${err.message}`));
             })
             .on('end', () => {
-                parentPort.postMessage(`✅ Đã tạo video: ${outputFile}`);
+                parentPort.postMessage(`✅ Created video: ${outputFile}`);
                 resolve();
             })
             .run();
@@ -80,4 +79,4 @@ processItem(workerData)
     })
     .catch(error => {
         parentPort.postMessage({ type: 'error', error: error.message });
-    })
+    });

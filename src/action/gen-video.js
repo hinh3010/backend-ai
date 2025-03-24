@@ -1,10 +1,11 @@
 const { Worker } = require('worker_threads');
 const fs = require('fs');
 const path = require('path');
+
 const config = [
     {
         "english": "Do you want to come over?",
-        "pronunciation": "/du jə wɒnt tə kʌm ˈoʊvər/",
+        "phonetic": "/du jə wɒnt tə kʌm ˈoʊvər/",
         "vietnamese": "Bạn có muốn đến chơi không?",
         "subject": "Do you want to",
         "thumbnail": "1.png"
@@ -13,13 +14,13 @@ const config = [
 
 // Define directories for different file types
 // eslint-disable-next-line no-undef
-const audioDir = path.join(__dirname, '../../audio_files');
+const audioDir = path.join(__dirname, '../../files/audio_files');
 // eslint-disable-next-line no-undef
-const imageDir = path.join(__dirname, '../../image_files');
+const imageDir = path.join(__dirname, '../../files/image_files');
 // eslint-disable-next-line no-undef
-const videoDir = path.join(__dirname, '../../video_files');
+const videoDir = path.join(__dirname, '../../files/video_files');
 // eslint-disable-next-line no-undef
-const libDir = path.join(__dirname, '../../lib');
+const libDir = path.join(__dirname, '../../files/lib');
 
 fs.mkdirSync(audioDir, { recursive: true });
 fs.mkdirSync(videoDir, { recursive: true });
@@ -37,7 +38,7 @@ const queue = [];
  */
 function processItem(item) {
     return new Promise((resolve, reject) => {
-        const worker = new Worker('./src/worker/index.js', {
+        const worker = new Worker('./src/worker/gen-video.js', {
             workerData: {
                 item,
                 audioDir,

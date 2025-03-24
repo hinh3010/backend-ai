@@ -1,0 +1,100 @@
+1	Do you want to go out tonight?	/du jə wɒnt tə ɡoʊ aʊt təˈnaɪt/	Bạn có muốn ra ngoài tối nay không?
+2	Do you want to eat something?	/du jə wɒnt tə iːt ˈsʌmθɪŋ/	Bạn có muốn ăn gì không?
+3	Do you want to call me later?	/du jə wɒnt tə kɔːl miː ˈleɪtər/	Bạn có muốn gọi cho tôi sau không?
+4	Do you want to join us?	/du jə wɒnt tə dʒɔɪn ʌs/	Bạn có muốn tham gia cùng chúng tôi không?
+5	Do you want to take a break?	/du jə wɒnt tə teɪk ə breɪk/	Bạn có muốn nghỉ ngơi không?
+6	Do you want to try this?	/du jə wɒnt tə traɪ ðɪs/	Bạn có muốn thử cái này không?
+7	Do you want to come with me?	/du jə wɒnt tə kʌm wɪð miː/	Bạn có muốn đi cùng tôi không?
+8	Do you want to see a movie?	/du jə wɒnt tə siː ə ˈmuːvi/	Bạn có muốn xem phim không?
+9	Do you want to play a game?	/du jə wɒnt tə pleɪ ə ɡeɪm/	Bạn có muốn chơi một trò chơi không?
+10	Do you want to talk about it?	/du jə wɒnt tə tɔːk əˈbaʊt ɪt/	Bạn có muốn nói về chuyện đó không?
+11	Do you want to go shopping?	/du jə wɒnt tə ɡoʊ ˈʃɒpɪŋ/	Bạn có muốn đi mua sắm không?
+12	Do you want to visit your parents?	/du jə wɒnt tə ˈvɪzɪt jɔːr ˈpeərənts/	Bạn có muốn thăm bố mẹ bạn không?
+13	Do you want to learn something new?	/du jə wɒnt tə lɜːrn ˈsʌmθɪŋ njuː/	Bạn có muốn học điều gì mới không?
+14	Do you want to stay here?	/du jə wɒnt tə steɪ hɪr/	Bạn có muốn ở lại đây không?
+15	Do you want to help me?	/du jə wɒnt tə help miː/	Bạn có muốn giúp tôi không?
+16	Do you want to dance with me?	/du jə wɒnt tə dæns wɪð miː/	Bạn có muốn nhảy cùng tôi không?
+17	Do you want to read a book?	/du jə wɒnt tə riːd ə bʊk/	Bạn có muốn đọc sách không?
+18	Do you want to cook dinner?	/du jə wɒnt tə kʊk ˈdɪnər/	Bạn có muốn nấu bữa tối không?
+19	Do you want to travel somewhere?	/du jə wɒnt tə ˈtrævəl ˈsʌmweər/	Bạn có muốn đi du lịch đâu đó không?
+20	Do you want to meet my friends?	/du jə wɒnt tə miːt maɪ frendz/	Bạn có muốn gặp bạn bè của tôi không?
+21	Do you want to listen to music?	/du jə wɒnt tə ˈlɪsən tə ˈmjuːzɪk/	Bạn có muốn nghe nhạc không?
+22	Do you want to watch TV?	/du jə wɒnt tə wɒtʃ tiːˈviː/	Bạn có muốn xem TV không?
+23	Do you want to go for a walk?	/du jə wɒnt tə ɡoʊ fər ə wɔːk/	Bạn có muốn đi dạo không?
+24	Do you want to sleep now?	/du jə wɒnt tə sliːp naʊ/	Bạn có muốn ngủ bây giờ không?
+25	Do you want to study English?	/du jə wɒnt tə ˈstʌdi ˈɪŋɡlɪʃ/	Bạn có muốn học tiếng Anh không?
+26	Do you want to drive somewhere?	/du jə wɒnt tə draɪv ˈsʌmweər/	Bạn có muốn lái xe đi đâu đó không?
+27	Do you want to buy something?	/du jə wɒnt tə baɪ ˈsʌmθɪŋ/	Bạn có muốn mua gì không?
+28	Do you want to work with me?	/du jə wɒnt tə wɜːrk wɪð miː/	Bạn có muốn làm việc cùng tôi không?
+29	Do you want to swim today?	/du jə wɒnt tə swɪm təˈdeɪ/	Bạn có muốn bơi hôm nay không?
+30	Do you want to take a picture?	/du jə wɒnt tə teɪk ə ˈpɪktʃər/	Bạn có muốn chụp ảnh không?
+31	Do you want to run with me?	/du jə wɒnt tə rʌn wɪð miː/	Bạn có muốn chạy cùng tôi không?
+32	Do you want to sing a song?	/du jə wɒnt tə sɪŋ ə sɒŋ/	Bạn có muốn hát một bài không?
+33	Do you want to paint something?	/du jə wɒnt tə peɪnt ˈsʌmθɪŋ/	Bạn có muốn vẽ gì không?
+34	Do you want to clean the house?	/du jə wɒnt tə kliːn ðə haʊs/	Bạn có muốn dọn nhà không?
+35	Do you want to start now?	/du jə wɒnt tə stɑːrt naʊ/	Bạn có muốn bắt đầu bây giờ không?
+36	Do you want to finish this?	/du jə wɒnt tə ˈfɪnɪʃ ðɪs/	Bạn có muốn hoàn thành cái này không?
+37	Do you want to wait for me?	/du jə wɒnt tə weɪt fər miː/	Bạn có muốn đợi tôi không?
+38	Do you want to sit down?	/du jə wɒnt tə sɪt daʊn/	Bạn có muốn ngồi xuống không?
+39	Do you want to stand up?	/du jə wɒnt tə stænd ʌp/	Bạn có muốn đứng lên không?
+40	Do you want to try again?	/du jə wɒnt tə traɪ əˈɡen/	Bạn có muốn thử lại không?
+41	Do you want to go home?	/du jə wɒnt tə ɡoʊ hoʊm/	Bạn có muốn về nhà không?
+42	Do you want to leave now?	/du jə wɒnt tə liːv naʊ/	Bạn có muốn rời đi bây giờ không?
+43	Do you want to stay longer?	/du jə wɒnt tə steɪ ˈlɒŋɡər/	Bạn có muốn ở lại lâu hơn không?
+44	Do you want to check this out?	/du jə wɒnt tə tʃek ðɪs aʊt/	Bạn có muốn xem cái này không?
+45	Do you want to order food?	/du jə wɒnt tə ˈɔːrdər fuːd/	Bạn có muốn gọi món ăn không?
+46	Do you want to drink water?	/du jə wɒnt tə drɪŋk ˈwɔːtər/	Bạn có muốn uống nước không?
+47	Do you want to ride a bike?	/du jə wɒnt tə raɪd ə baɪk/	Bạn có muốn đạp xe không?
+48	Do you want to hike this weekend?	/du jə wɒnt tə haɪk ðɪs ˈwiːkend/	Bạn có muốn đi bộ đường dài cuối tuần này không?
+49	Do you want to play soccer?	/du jə wɒnt tə pleɪ ˈsɒkər/	Bạn có muốn chơi bóng đá không?
+50	Do you want to visit the museum?	/du jə wɒnt tə ˈvɪzɪt ðə mjuˈziːəm/	Bạn có muốn thăm bảo tàng không?
+51	Do you want to write a letter?	/du jə wɒnt tə raɪt ə ˈletər/	Bạn có muốn viết thư không?
+52	Do you want to draw something?	/du jə wɒnt tə drɔː ˈsʌmθɪŋ/	Bạn có muốn vẽ gì không?
+53	Do you want to bake a cake?	/du jə wɒnt tə beɪk ə keɪk/	Bạn có muốn nướng bánh không?
+54	Do you want to fix this?	/du jə wɒnt tə fɪks ðɪs/	Bạn có muốn sửa cái này không?
+55	Do you want to share this?	/du jə wɒnt tə ʃeər ðɪs/	Bạn có muốn chia sẻ cái này không?
+56	Do you want to talk to him?	/du jə wɒnt tə tɔːk tə hɪm/	Bạn có muốn nói chuyện với anh ấy không?
+57	Do you want to meet tomorrow?	/du jə wɒnt tə miːt təˈmɒroʊ/	Bạn có muốn gặp ngày mai không?
+58	Do you want to go to bed?	/du jə wɒnt tə ɡoʊ tə bed/	Bạn có muốn đi ngủ không?
+59	Do you want to exercise today?	/du jə wɒnt tə ˈeksərsaɪz təˈdeɪ/	Bạn có muốn tập thể dục hôm nay không?
+60	Do you want to watch the sunset?	/du jə wɒnt tə wɒtʃ ðə ˈsʌnset/	Bạn có muốn xem hoàng hôn không?
+61	Do you want to play cards?	/du jə wɒnt tə pleɪ kɑːrdz/	Bạn có muốn chơi bài không?
+62	Do you want to visit the park?	/du jə wɒnt tə ˈvɪzɪt ðə pɑːrk/	Bạn có muốn thăm công viên không?
+63	Do you want to take a nap?	/du jə wɒnt tə teɪk ə næp/	Bạn có muốn chợp mắt không?
+64	Do you want to go fishing?	/du jə wɒnt tə ɡoʊ ˈfɪʃɪŋ/	Bạn có muốn đi câu cá không?
+65	Do you want to learn to cook?	/du jə wɒnt tə lɜːrn tə kʊk/	Bạn có muốn học nấu ăn không?
+66	Do you want to try yoga?	/du jə wɒnt tə traɪ ˈjoʊɡə/	Bạn có muốn thử yoga không?
+67	Do you want to watch a game?	/du jə wɒnt tə wɒtʃ ə ɡeɪm/	Bạn có muốn xem một trận đấu không?
+68	Do you want to go camping?	/du jə wɒnt tə ɡoʊ ˈkæmpɪŋ/	Bạn có muốn đi cắm trại không?
+69	Do you want to call your mom?	/du jə wɒnt tə kɔːl jɔːr mɒm/	Bạn có muốn gọi cho mẹ bạn không?
+70	Do you want to eat out?	/du jə wɒnt tə iːt aʊt/	Bạn có muốn ăn ngoài không?
+71	Do you want to take a shower?	/du jə wɒnt tə teɪk ə ˈʃaʊər/	Bạn có muốn tắm không?
+72	Do you want to visit the beach?	/du jə wɒnt tə ˈvɪzɪt ðə biːtʃ/	Bạn có muốn đến bãi biển không?
+73	Do you want to play music?	/du jə wɒnt tə pleɪ ˈmjuːzɪk/	Bạn có muốn chơi nhạc không?
+74	Do you want to go jogging?	/du jə wɒnt tə ɡoʊ ˈdʒɒɡɪŋ/	Bạn có muốn đi chạy bộ không?
+75	Do you want to watch a show?	/du jə wɒnt tə wɒtʃ ə ʃoʊ/	Bạn có muốn xem một chương trình không?
+76	Do you want to learn a language?	/du jə wɒnt tə lɜːrn ə ˈlæŋɡwɪdʒ/	Bạn có muốn học một ngôn ngữ không?
+77	Do you want to take a class?	/du jə wɒnt tə teɪk ə klæs/	Bạn có muốn tham gia một lớp học không?
+78	Do you want to go to the gym?	/du jə wɒnt tə ɡoʊ tə ðə dʒɪm/	Bạn có muốn đến phòng gym không?
+79	Do you want to try dancing?	/du jə wɒnt tə traɪ ˈdænsɪŋ/	Bạn có muốn thử nhảy không?
+80	Do you want to visit a friend?	/du jə wɒnt tə ˈvɪzɪt ə frend/	Bạn có muốn thăm một người bạn không?
+81	Do you want to play chess?	/du jə wɒnt tə pleɪ tʃes/	Bạn có muốn chơi cờ vua không?
+82	Do you want to go to a party?	/du jə wɒnt tə ɡoʊ tə ə ˈpɑːrti/	Bạn có muốn đến một bữa tiệc không?
+83	Do you want to watch the stars?	/du jə wɒnt tə wɒtʃ ðə stɑːrz/	Bạn có muốn ngắm sao không?
+84	Do you want to try a new restaurant?	/du jə wɒnt tə traɪ ə njuː ˈrestrɒnt/	Bạn có muốn thử một nhà hàng mới không?
+85	Do you want to go skiing?	/du jə wɒnt tə ɡoʊ ˈskiːɪŋ/	Bạn có muốn đi trượt tuyết không?
+86	Do you want to read the news?	/du jə wɒnt tə riːd ðə njuːz/	Bạn có muốn đọc tin tức không?
+87	Do you want to take a trip?	/du jə wɒnt tə teɪk ə trɪp/	Bạn có muốn đi du lịch không?
+88	Do you want to watch a concert?	/du jə wɒnt tə wɒtʃ ə ˈkɒnsərt/	Bạn có muốn xem buổi hòa nhạc không?
+89	Do you want to go to school?	/du jə wɒnt tə ɡoʊ tə skuːl/	Bạn có muốn đến trường không?
+90	Do you want to try painting?	/du jə wɒnt tə traɪ ˈpeɪntɪŋ/	Bạn có muốn thử vẽ tranh không?
+91	Do you want to visit the zoo?	/du jə wɒnt tə ˈvɪzɪt ðə zuː/	Bạn có muốn thăm sở thú không?
+92	Do you want to play tennis?	/du jə wɒnt tə pleɪ ˈtenɪs/	Bạn có muốn chơi tennis không?
+93	Do you want to go to the mall?	/du jə wɒnt tə ɡoʊ tə ðə mɔːl/	Bạn có muốn đến trung tâm thương mại không?
+94	Do you want to watch a play?	/du jə wɒnt tə wɒtʃ ə pleɪ/	Bạn có muốn xem một vở kịch không?
+95	Do you want to try cooking?	/du jə wɒnt tə traɪ ˈkʊkɪŋ/	Bạn có muốn thử nấu ăn không?
+96	Do you want to go to work?	/du jə wɒnt tə ɡoʊ tə wɜːrk/	Bạn có muốn đi làm không?
+97	Do you want to visit the city?	/du jə wɒnt tə ˈvɪzɪt ðə ˈsɪti/	Bạn có muốn thăm thành phố không?
+98	Do you want to play a video game?	/du jə wɒnt tə pleɪ ə ˈvɪdioʊ ɡeɪm/	Bạn có muốn chơi trò chơi điện tử không?
+99	Do you want to go to the library?	/du jə wɒnt tə ɡoʊ tə ðə ˈlaɪbrəri/	Bạn có muốn đến thư viện không?
+100	Do you want to relax today?	/du jə wɒnt tə rɪˈlæks təˈdeɪ/	Bạn có muốn thư giãn hôm nay không?

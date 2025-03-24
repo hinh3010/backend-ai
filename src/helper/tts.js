@@ -4,7 +4,7 @@ const { slugify } = require('./slugify');
 
 exports.toTTS = async (text, lang = 'en') => {
     // eslint-disable-next-line no-undef
-    const dir = path.join(__dirname, '../../audio_files');
+    const dir = path.join(__dirname, '../../files/audio_files');
 
     try {
         const slugText = slugify(text);
