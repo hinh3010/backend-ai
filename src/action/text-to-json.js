@@ -1,6 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const { slugify } = require('../helper/slugify');
+const Bluebird = require('bluebird');
 
 // eslint-disable-next-line no-undef
 const textDir = path.join(__dirname, '../../files/txt_files');
@@ -9,8 +10,8 @@ const jsonDir = path.join(__dirname, '../../files/json_files');
 // eslint-disable-next-line no-undef
 const imageDir = path.join(__dirname, '../../files/image_files');
 
-function convertTextToJson(fileNames) {
-    fileNames.forEach(fileName => {
+async function convertTextToJson(fileNames) {
+    await Bluebird.mapSeries(fileNames, async fileName => {
         const textPath = path.join(textDir, `${slugify(fileName)}.txt`);
 
         fs.readFile(textPath, 'utf8', (err, data) => {
@@ -20,15 +21,17 @@ function convertTextToJson(fileNames) {
             }
 
             const lines = data.trim().split('\n');
-            const jsonResult = lines.map(line => {
-                const [id, english, phonetic, vietnamese] = line.split('\t');
+            const jsonResult = lines.map((line, index) => {
+                const imagePath = path.join(imageDir, `${slugify(fileName)}/${index + 1}.jpg`);
+                const [id, subject, english, phonetic, vietnamese] = line.split('\t');
+
                 return {
                     id: parseInt(id),
                     english: english,
                     phonetic: phonetic,
                     vietnamese: vietnamese,
-                    subject: fileName,
-                    thumbnail: null
+                    subject: subject,
+                    thumbnail: imagePath
                 };
             });
 
@@ -43,7 +46,9 @@ function convertTextToJson(fileNames) {
                 console.log(`Data from ${fileName} has been converted and saved to ${jsonFileName}`);
             });
         });
-    });
+    })
+
+    console.log(`[Successfully]`)
 }
 
 const fileNames = ['Do you want to'];

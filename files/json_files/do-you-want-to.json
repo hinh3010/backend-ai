@@ -1,602 +1,802 @@
 [
     {
         "id": 1,
-        "question": "Do you want to go out tonight?",
+        "english": "Do you want to go out tonight?",
         "phonetic": "/du jə wɒnt tə ɡoʊ aʊt təˈnaɪt/",
-        "translation": "Bạn có muốn ra ngoài tối nay không?"
+        "vietnamese": "Bạn có muốn ra ngoài tối nay không?",
+        "subject": "Do you want to",
+        "thumbnail": "/home/dev/Desktop/AI/backend-ai/files/image_files/do-you-want-to/1.jpg"
     },
     {
         "id": 2,
-        "question": "Do you want to eat something?",
+        "english": "Do you want to eat something?",
         "phonetic": "/du jə wɒnt tə iːt ˈsʌmθɪŋ/",
-        "translation": "Bạn có muốn ăn gì không?"
+        "vietnamese": "Bạn có muốn ăn gì không?",
+        "subject": "Do you want to",
+        "thumbnail": "/home/dev/Desktop/AI/backend-ai/files/image_files/do-you-want-to/1.jpg"
     },
     {
         "id": 3,
-        "question": "Do you want to call me later?",
+        "english": "Do you want to call me later?",
         "phonetic": "/du jə wɒnt tə kɔːl miː ˈleɪtər/",
-        "translation": "Bạn có muốn gọi cho tôi sau không?"
+        "vietnamese": "Bạn có muốn gọi cho tôi sau không?",
+        "subject": "Do you want to",
+        "thumbnail": "/home/dev/Desktop/AI/backend-ai/files/image_files/do-you-want-to/1.jpg"
     },
     {
         "id": 4,
-        "question": "Do you want to join us?",
+        "english": "Do you want to join us?",
         "phonetic": "/du jə wɒnt tə dʒɔɪn ʌs/",
-        "translation": "Bạn có muốn tham gia cùng chúng tôi không?"
+        "vietnamese": "Bạn có muốn tham gia cùng chúng tôi không?",
+        "subject": "Do you want to",
+        "thumbnail": "/home/dev/Desktop/AI/backend-ai/files/image_files/do-you-want-to/1.jpg"
     },
     {
         "id": 5,
-        "question": "Do you want to take a break?",
+        "english": "Do you want to take a break?",
         "phonetic": "/du jə wɒnt tə teɪk ə breɪk/",
-        "translation": "Bạn có muốn nghỉ ngơi không?"
+        "vietnamese": "Bạn có muốn nghỉ ngơi không?",
+        "subject": "Do you want to",
+        "thumbnail": "/home/dev/Desktop/AI/backend-ai/files/image_files/do-you-want-to/1.jpg"
     },
     {
         "id": 6,
-        "question": "Do you want to try this?",
+        "english": "Do you want to try this?",
         "phonetic": "/du jə wɒnt tə traɪ ðɪs/",
-        "translation": "Bạn có muốn thử cái này không?"
+        "vietnamese": "Bạn có muốn thử cái này không?",
+        "subject": "Do you want to",
+        "thumbnail": "/home/dev/Desktop/AI/backend-ai/files/image_files/do-you-want-to/1.jpg"
     },
     {
         "id": 7,
-        "question": "Do you want to come with me?",
+        "english": "Do you want to come with me?",
         "phonetic": "/du jə wɒnt tə kʌm wɪð miː/",
-        "translation": "Bạn có muốn đi cùng tôi không?"
+        "vietnamese": "Bạn có muốn đi cùng tôi không?",
+        "subject": "Do you want to",
+        "thumbnail": "/home/dev/Desktop/AI/backend-ai/files/image_files/do-you-want-to/1.jpg"
     },
     {
         "id": 8,
-        "question": "Do you want to see a movie?",
+        "english": "Do you want to see a movie?",
         "phonetic": "/du jə wɒnt tə siː ə ˈmuːvi/",
-        "translation": "Bạn có muốn xem phim không?"
+        "vietnamese": "Bạn có muốn xem phim không?",
+        "subject": "Do you want to",
+        "thumbnail": "/home/dev/Desktop/AI/backend-ai/files/image_files/do-you-want-to/1.jpg"
     },
     {
         "id": 9,
-        "question": "Do you want to play a game?",
+        "english": "Do you want to play a game?",
         "phonetic": "/du jə wɒnt tə pleɪ ə ɡeɪm/",
-        "translation": "Bạn có muốn chơi một trò chơi không?"
+        "vietnamese": "Bạn có muốn chơi một trò chơi không?",
+        "subject": "Do you want to",
+        "thumbnail": "/home/dev/Desktop/AI/backend-ai/files/image_files/do-you-want-to/1.jpg"
     },
     {
         "id": 10,
-        "question": "Do you want to talk about it?",
+        "english": "Do you want to talk about it?",
         "phonetic": "/du jə wɒnt tə tɔːk əˈbaʊt ɪt/",
-        "translation": "Bạn có muốn nói về chuyện đó không?"
+        "vietnamese": "Bạn có muốn nói về chuyện đó không?",
+        "subject": "Do you want to",
+        "thumbnail": "/home/dev/Desktop/AI/backend-ai/files/image_files/do-you-want-to/1.jpg"
     },
     {
         "id": 11,
-        "question": "Do you want to go shopping?",
+        "english": "Do you want to go shopping?",
         "phonetic": "/du jə wɒnt tə ɡoʊ ˈʃɒpɪŋ/",
-        "translation": "Bạn có muốn đi mua sắm không?"
+        "vietnamese": "Bạn có muốn đi mua sắm không?",
+        "subject": "Do you want to",
+        "thumbnail": "/home/dev/Desktop/AI/backend-ai/files/image_files/do-you-want-to/1.jpg"
     },
     {
         "id": 12,
-        "question": "Do you want to visit your parents?",
+        "english": "Do you want to visit your parents?",
         "phonetic": "/du jə wɒnt tə ˈvɪzɪt jɔːr ˈpeərənts/",
-        "translation": "Bạn có muốn thăm bố mẹ bạn không?"
+        "vietnamese": "Bạn có muốn thăm bố mẹ bạn không?",
+        "subject": "Do you want to",
+        "thumbnail": "/home/dev/Desktop/AI/backend-ai/files/image_files/do-you-want-to/1.jpg"
     },
     {
         "id": 13,
-        "question": "Do you want to learn something new?",
+        "english": "Do you want to learn something new?",
         "phonetic": "/du jə wɒnt tə lɜːrn ˈsʌmθɪŋ njuː/",
-        "translation": "Bạn có muốn học điều gì mới không?"
+        "vietnamese": "Bạn có muốn học điều gì mới không?",
+        "subject": "Do you want to",
+        "thumbnail": "/home/dev/Desktop/AI/backend-ai/files/image_files/do-you-want-to/1.jpg"
     },
     {
         "id": 14,
-        "question": "Do you want to stay here?",
+        "english": "Do you want to stay here?",
         "phonetic": "/du jə wɒnt tə steɪ hɪr/",
-        "translation": "Bạn có muốn ở lại đây không?"
+        "vietnamese": "Bạn có muốn ở lại đây không?",
+        "subject": "Do you want to",
+        "thumbnail": "/home/dev/Desktop/AI/backend-ai/files/image_files/do-you-want-to/1.jpg"
     },
     {
         "id": 15,
-        "question": "Do you want to help me?",
+        "english": "Do you want to help me?",
         "phonetic": "/du jə wɒnt tə help miː/",
-        "translation": "Bạn có muốn giúp tôi không?"
+        "vietnamese": "Bạn có muốn giúp tôi không?",
+        "subject": "Do you want to",
+        "thumbnail": "/home/dev/Desktop/AI/backend-ai/files/image_files/do-you-want-to/1.jpg"
     },
     {
         "id": 16,
-        "question": "Do you want to dance with me?",
+        "english": "Do you want to dance with me?",
         "phonetic": "/du jə wɒnt tə dæns wɪð miː/",
-        "translation": "Bạn có muốn nhảy cùng tôi không?"
+        "vietnamese": "Bạn có muốn nhảy cùng tôi không?",
+        "subject": "Do you want to",
+        "thumbnail": "/home/dev/Desktop/AI/backend-ai/files/image_files/do-you-want-to/1.jpg"
     },
     {
         "id": 17,
-        "question": "Do you want to read a book?",
+        "english": "Do you want to read a book?",
         "phonetic": "/du jə wɒnt tə riːd ə bʊk/",
-        "translation": "Bạn có muốn đọc sách không?"
+        "vietnamese": "Bạn có muốn đọc sách không?",
+        "subject": "Do you want to",
+        "thumbnail": "/home/dev/Desktop/AI/backend-ai/files/image_files/do-you-want-to/1.jpg"
     },
     {
         "id": 18,
-        "question": "Do you want to cook dinner?",
+        "english": "Do you want to cook dinner?",
         "phonetic": "/du jə wɒnt tə kʊk ˈdɪnər/",
-        "translation": "Bạn có muốn nấu bữa tối không?"
+        "vietnamese": "Bạn có muốn nấu bữa tối không?",
+        "subject": "Do you want to",
+        "thumbnail": "/home/dev/Desktop/AI/backend-ai/files/image_files/do-you-want-to/1.jpg"
     },
     {
         "id": 19,
-        "question": "Do you want to travel somewhere?",
+        "english": "Do you want to travel somewhere?",
         "phonetic": "/du jə wɒnt tə ˈtrævəl ˈsʌmweər/",
-        "translation": "Bạn có muốn đi du lịch đâu đó không?"
+        "vietnamese": "Bạn có muốn đi du lịch đâu đó không?",
+        "subject": "Do you want to",
+        "thumbnail": "/home/dev/Desktop/AI/backend-ai/files/image_files/do-you-want-to/1.jpg"
     },
     {
         "id": 20,
-        "question": "Do you want to meet my friends?",
+        "english": "Do you want to meet my friends?",
         "phonetic": "/du jə wɒnt tə miːt maɪ frendz/",
-        "translation": "Bạn có muốn gặp bạn bè của tôi không?"
+        "vietnamese": "Bạn có muốn gặp bạn bè của tôi không?",
+        "subject": "Do you want to",
+        "thumbnail": "/home/dev/Desktop/AI/backend-ai/files/image_files/do-you-want-to/1.jpg"
     },
     {
         "id": 21,
-        "question": "Do you want to listen to music?",
+        "english": "Do you want to listen to music?",
         "phonetic": "/du jə wɒnt tə ˈlɪsən tə ˈmjuːzɪk/",
-        "translation": "Bạn có muốn nghe nhạc không?"
+        "vietnamese": "Bạn có muốn nghe nhạc không?",
+        "subject": "Do you want to",
+        "thumbnail": "/home/dev/Desktop/AI/backend-ai/files/image_files/do-you-want-to/1.jpg"
     },
     {
         "id": 22,
-        "question": "Do you want to watch TV?",
+        "english": "Do you want to watch TV?",
         "phonetic": "/du jə wɒnt tə wɒtʃ tiːˈviː/",
-        "translation": "Bạn có muốn xem TV không?"
+        "vietnamese": "Bạn có muốn xem TV không?",
+        "subject": "Do you want to",
+        "thumbnail": "/home/dev/Desktop/AI/backend-ai/files/image_files/do-you-want-to/1.jpg"
     },
     {
         "id": 23,
-        "question": "Do you want to go for a walk?",
+        "english": "Do you want to go for a walk?",
         "phonetic": "/du jə wɒnt tə ɡoʊ fər ə wɔːk/",
-        "translation": "Bạn có muốn đi dạo không?"
+        "vietnamese": "Bạn có muốn đi dạo không?",
+        "subject": "Do you want to",
+        "thumbnail": "/home/dev/Desktop/AI/backend-ai/files/image_files/do-you-want-to/1.jpg"
     },
     {
         "id": 24,
-        "question": "Do you want to sleep now?",
+        "english": "Do you want to sleep now?",
         "phonetic": "/du jə wɒnt tə sliːp naʊ/",
-        "translation": "Bạn có muốn ngủ bây giờ không?"
+        "vietnamese": "Bạn có muốn ngủ bây giờ không?",
+        "subject": "Do you want to",
+        "thumbnail": "/home/dev/Desktop/AI/backend-ai/files/image_files/do-you-want-to/1.jpg"
     },
     {
         "id": 25,
-        "question": "Do you want to study English?",
+        "english": "Do you want to study English?",
         "phonetic": "/du jə wɒnt tə ˈstʌdi ˈɪŋɡlɪʃ/",
-        "translation": "Bạn có muốn học tiếng Anh không?"
+        "vietnamese": "Bạn có muốn học tiếng Anh không?",
+        "subject": "Do you want to",
+        "thumbnail": "/home/dev/Desktop/AI/backend-ai/files/image_files/do-you-want-to/1.jpg"
     },
     {
         "id": 26,
-        "question": "Do you want to drive somewhere?",
+        "english": "Do you want to drive somewhere?",
         "phonetic": "/du jə wɒnt tə draɪv ˈsʌmweər/",
-        "translation": "Bạn có muốn lái xe đi đâu đó không?"
+        "vietnamese": "Bạn có muốn lái xe đi đâu đó không?",
+        "subject": "Do you want to",
+        "thumbnail": "/home/dev/Desktop/AI/backend-ai/files/image_files/do-you-want-to/1.jpg"
     },
     {
         "id": 27,
-        "question": "Do you want to buy something?",
+        "english": "Do you want to buy something?",
         "phonetic": "/du jə wɒnt tə baɪ ˈsʌmθɪŋ/",
-        "translation": "Bạn có muốn mua gì không?"
+        "vietnamese": "Bạn có muốn mua gì không?",
+        "subject": "Do you want to",
+        "thumbnail": "/home/dev/Desktop/AI/backend-ai/files/image_files/do-you-want-to/1.jpg"
     },
     {
         "id": 28,
-        "question": "Do you want to work with me?",
+        "english": "Do you want to work with me?",
         "phonetic": "/du jə wɒnt tə wɜːrk wɪð miː/",
-        "translation": "Bạn có muốn làm việc cùng tôi không?"
+        "vietnamese": "Bạn có muốn làm việc cùng tôi không?",
+        "subject": "Do you want to",
+        "thumbnail": "/home/dev/Desktop/AI/backend-ai/files/image_files/do-you-want-to/1.jpg"
     },
     {
         "id": 29,
-        "question": "Do you want to swim today?",
+        "english": "Do you want to swim today?",
         "phonetic": "/du jə wɒnt tə swɪm təˈdeɪ/",
-        "translation": "Bạn có muốn bơi hôm nay không?"
+        "vietnamese": "Bạn có muốn bơi hôm nay không?",
+        "subject": "Do you want to",
+        "thumbnail": "/home/dev/Desktop/AI/backend-ai/files/image_files/do-you-want-to/1.jpg"
     },
     {
         "id": 30,
-        "question": "Do you want to take a picture?",
+        "english": "Do you want to take a picture?",
         "phonetic": "/du jə wɒnt tə teɪk ə ˈpɪktʃər/",
-        "translation": "Bạn có muốn chụp ảnh không?"
+        "vietnamese": "Bạn có muốn chụp ảnh không?",
+        "subject": "Do you want to",
+        "thumbnail": "/home/dev/Desktop/AI/backend-ai/files/image_files/do-you-want-to/1.jpg"
     },
     {
         "id": 31,
-        "question": "Do you want to run with me?",
+        "english": "Do you want to run with me?",
         "phonetic": "/du jə wɒnt tə rʌn wɪð miː/",
-        "translation": "Bạn có muốn chạy cùng tôi không?"
+        "vietnamese": "Bạn có muốn chạy cùng tôi không?",
+        "subject": "Do you want to",
+        "thumbnail": "/home/dev/Desktop/AI/backend-ai/files/image_files/do-you-want-to/1.jpg"
     },
     {
         "id": 32,
-        "question": "Do you want to sing a song?",
+        "english": "Do you want to sing a song?",
         "phonetic": "/du jə wɒnt tə sɪŋ ə sɒŋ/",
-        "translation": "Bạn có muốn hát một bài không?"
+        "vietnamese": "Bạn có muốn hát một bài không?",
+        "subject": "Do you want to",
+        "thumbnail": "/home/dev/Desktop/AI/backend-ai/files/image_files/do-you-want-to/1.jpg"
     },
     {
         "id": 33,
-        "question": "Do you want to paint something?",
+        "english": "Do you want to paint something?",
         "phonetic": "/du jə wɒnt tə peɪnt ˈsʌmθɪŋ/",
-        "translation": "Bạn có muốn vẽ gì không?"
+        "vietnamese": "Bạn có muốn vẽ gì không?",
+        "subject": "Do you want to",
+        "thumbnail": "/home/dev/Desktop/AI/backend-ai/files/image_files/do-you-want-to/1.jpg"
     },
     {
         "id": 34,
-        "question": "Do you want to clean the house?",
+        "english": "Do you want to clean the house?",
         "phonetic": "/du jə wɒnt tə kliːn ðə haʊs/",
-        "translation": "Bạn có muốn dọn nhà không?"
+        "vietnamese": "Bạn có muốn dọn nhà không?",
+        "subject": "Do you want to",
+        "thumbnail": "/home/dev/Desktop/AI/backend-ai/files/image_files/do-you-want-to/1.jpg"
     },
     {
         "id": 35,
-        "question": "Do you want to start now?",
+        "english": "Do you want to start now?",
         "phonetic": "/du jə wɒnt tə stɑːrt naʊ/",
-        "translation": "Bạn có muốn bắt đầu bây giờ không?"
+        "vietnamese": "Bạn có muốn bắt đầu bây giờ không?",
+        "subject": "Do you want to",
+        "thumbnail": "/home/dev/Desktop/AI/backend-ai/files/image_files/do-you-want-to/1.jpg"
     },
     {
         "id": 36,
-        "question": "Do you want to finish this?",
+        "english": "Do you want to finish this?",
         "phonetic": "/du jə wɒnt tə ˈfɪnɪʃ ðɪs/",
-        "translation": "Bạn có muốn hoàn thành cái này không?"
+        "vietnamese": "Bạn có muốn hoàn thành cái này không?",
+        "subject": "Do you want to",
+        "thumbnail": "/home/dev/Desktop/AI/backend-ai/files/image_files/do-you-want-to/1.jpg"
     },
     {
         "id": 37,
-        "question": "Do you want to wait for me?",
+        "english": "Do you want to wait for me?",
         "phonetic": "/du jə wɒnt tə weɪt fər miː/",
-        "translation": "Bạn có muốn đợi tôi không?"
+        "vietnamese": "Bạn có muốn đợi tôi không?",
+        "subject": "Do you want to",
+        "thumbnail": "/home/dev/Desktop/AI/backend-ai/files/image_files/do-you-want-to/1.jpg"
     },
     {
         "id": 38,
-        "question": "Do you want to sit down?",
+        "english": "Do you want to sit down?",
         "phonetic": "/du jə wɒnt tə sɪt daʊn/",
-        "translation": "Bạn có muốn ngồi xuống không?"
+        "vietnamese": "Bạn có muốn ngồi xuống không?",
+        "subject": "Do you want to",
+        "thumbnail": "/home/dev/Desktop/AI/backend-ai/files/image_files/do-you-want-to/1.jpg"
     },
     {
         "id": 39,
-        "question": "Do you want to stand up?",
+        "english": "Do you want to stand up?",
         "phonetic": "/du jə wɒnt tə stænd ʌp/",
-        "translation": "Bạn có muốn đứng lên không?"
+        "vietnamese": "Bạn có muốn đứng lên không?",
+        "subject": "Do you want to",
+        "thumbnail": "/home/dev/Desktop/AI/backend-ai/files/image_files/do-you-want-to/1.jpg"
     },
     {
         "id": 40,
-        "question": "Do you want to try again?",
+        "english": "Do you want to try again?",
         "phonetic": "/du jə wɒnt tə traɪ əˈɡen/",
-        "translation": "Bạn có muốn thử lại không?"
+        "vietnamese": "Bạn có muốn thử lại không?",
+        "subject": "Do you want to",
+        "thumbnail": "/home/dev/Desktop/AI/backend-ai/files/image_files/do-you-want-to/1.jpg"
     },
     {
         "id": 41,
-        "question": "Do you want to go home?",
+        "english": "Do you want to go home?",
         "phonetic": "/du jə wɒnt tə ɡoʊ hoʊm/",
-        "translation": "Bạn có muốn về nhà không?"
+        "vietnamese": "Bạn có muốn về nhà không?",
+        "subject": "Do you want to",
+        "thumbnail": "/home/dev/Desktop/AI/backend-ai/files/image_files/do-you-want-to/1.jpg"
     },
     {
         "id": 42,
-        "question": "Do you want to leave now?",
+        "english": "Do you want to leave now?",
         "phonetic": "/du jə wɒnt tə liːv naʊ/",
-        "translation": "Bạn có muốn rời đi bây giờ không?"
+        "vietnamese": "Bạn có muốn rời đi bây giờ không?",
+        "subject": "Do you want to",
+        "thumbnail": "/home/dev/Desktop/AI/backend-ai/files/image_files/do-you-want-to/1.jpg"
     },
     {
         "id": 43,
-        "question": "Do you want to stay longer?",
+        "english": "Do you want to stay longer?",
         "phonetic": "/du jə wɒnt tə steɪ ˈlɒŋɡər/",
-        "translation": "Bạn có muốn ở lại lâu hơn không?"
+        "vietnamese": "Bạn có muốn ở lại lâu hơn không?",
+        "subject": "Do you want to",
+        "thumbnail": "/home/dev/Desktop/AI/backend-ai/files/image_files/do-you-want-to/1.jpg"
     },
     {
         "id": 44,
-        "question": "Do you want to check this out?",
+        "english": "Do you want to check this out?",
         "phonetic": "/du jə wɒnt tə tʃek ðɪs aʊt/",
-        "translation": "Bạn có muốn xem cái này không?"
+        "vietnamese": "Bạn có muốn xem cái này không?",
+        "subject": "Do you want to",
+        "thumbnail": "/home/dev/Desktop/AI/backend-ai/files/image_files/do-you-want-to/1.jpg"
     },
     {
         "id": 45,
-        "question": "Do you want to order food?",
+        "english": "Do you want to order food?",
         "phonetic": "/du jə wɒnt tə ˈɔːrdər fuːd/",
-        "translation": "Bạn có muốn gọi món ăn không?"
+        "vietnamese": "Bạn có muốn gọi món ăn không?",
+        "subject": "Do you want to",
+        "thumbnail": "/home/dev/Desktop/AI/backend-ai/files/image_files/do-you-want-to/1.jpg"
     },
     {
         "id": 46,
-        "question": "Do you want to drink water?",
+        "english": "Do you want to drink water?",
         "phonetic": "/du jə wɒnt tə drɪŋk ˈwɔːtər/",
-        "translation": "Bạn có muốn uống nước không?"
+        "vietnamese": "Bạn có muốn uống nước không?",
+        "subject": "Do you want to",
+        "thumbnail": "/home/dev/Desktop/AI/backend-ai/files/image_files/do-you-want-to/1.jpg"
     },
     {
         "id": 47,
-        "question": "Do you want to ride a bike?",
+        "english": "Do you want to ride a bike?",
         "phonetic": "/du jə wɒnt tə raɪd ə baɪk/",
-        "translation": "Bạn có muốn đạp xe không?"
+        "vietnamese": "Bạn có muốn đạp xe không?",
+        "subject": "Do you want to",
+        "thumbnail": "/home/dev/Desktop/AI/backend-ai/files/image_files/do-you-want-to/1.jpg"
     },
     {
         "id": 48,
-        "question": "Do you want to hike this weekend?",
+        "english": "Do you want to hike this weekend?",
         "phonetic": "/du jə wɒnt tə haɪk ðɪs ˈwiːkend/",
-        "translation": "Bạn có muốn đi bộ đường dài cuối tuần này không?"
+        "vietnamese": "Bạn có muốn đi bộ đường dài cuối tuần này không?",
+        "subject": "Do you want to",
+        "thumbnail": "/home/dev/Desktop/AI/backend-ai/files/image_files/do-you-want-to/1.jpg"
     },
     {
         "id": 49,
-        "question": "Do you want to play soccer?",
+        "english": "Do you want to play soccer?",
         "phonetic": "/du jə wɒnt tə pleɪ ˈsɒkər/",
-        "translation": "Bạn có muốn chơi bóng đá không?"
+        "vietnamese": "Bạn có muốn chơi bóng đá không?",
+        "subject": "Do you want to",
+        "thumbnail": "/home/dev/Desktop/AI/backend-ai/files/image_files/do-you-want-to/1.jpg"
     },
     {
         "id": 50,
-        "question": "Do you want to visit the museum?",
+        "english": "Do you want to visit the museum?",
         "phonetic": "/du jə wɒnt tə ˈvɪzɪt ðə mjuˈziːəm/",
-        "translation": "Bạn có muốn thăm bảo tàng không?"
+        "vietnamese": "Bạn có muốn thăm bảo tàng không?",
+        "subject": "Do you want to",
+        "thumbnail": "/home/dev/Desktop/AI/backend-ai/files/image_files/do-you-want-to/1.jpg"
     },
     {
         "id": 51,
-        "question": "Do you want to write a letter?",
+        "english": "Do you want to write a letter?",
         "phonetic": "/du jə wɒnt tə raɪt ə ˈletər/",
-        "translation": "Bạn có muốn viết thư không?"
+        "vietnamese": "Bạn có muốn viết thư không?",
+        "subject": "Do you want to",
+        "thumbnail": "/home/dev/Desktop/AI/backend-ai/files/image_files/do-you-want-to/1.jpg"
     },
     {
         "id": 52,
-        "question": "Do you want to draw something?",
+        "english": "Do you want to draw something?",
         "phonetic": "/du jə wɒnt tə drɔː ˈsʌmθɪŋ/",
-        "translation": "Bạn có muốn vẽ gì không?"
+        "vietnamese": "Bạn có muốn vẽ gì không?",
+        "subject": "Do you want to",
+        "thumbnail": "/home/dev/Desktop/AI/backend-ai/files/image_files/do-you-want-to/1.jpg"
     },
     {
         "id": 53,
-        "question": "Do you want to bake a cake?",
+        "english": "Do you want to bake a cake?",
         "phonetic": "/du jə wɒnt tə beɪk ə keɪk/",
-        "translation": "Bạn có muốn nướng bánh không?"
+        "vietnamese": "Bạn có muốn nướng bánh không?",
+        "subject": "Do you want to",
+        "thumbnail": "/home/dev/Desktop/AI/backend-ai/files/image_files/do-you-want-to/1.jpg"
     },
     {
         "id": 54,
-        "question": "Do you want to fix this?",
+        "english": "Do you want to fix this?",
         "phonetic": "/du jə wɒnt tə fɪks ðɪs/",
-        "translation": "Bạn có muốn sửa cái này không?"
+        "vietnamese": "Bạn có muốn sửa cái này không?",
+        "subject": "Do you want to",
+        "thumbnail": "/home/dev/Desktop/AI/backend-ai/files/image_files/do-you-want-to/1.jpg"
     },
     {
         "id": 55,
-        "question": "Do you want to share this?",
+        "english": "Do you want to share this?",
         "phonetic": "/du jə wɒnt tə ʃeər ðɪs/",
-        "translation": "Bạn có muốn chia sẻ cái này không?"
+        "vietnamese": "Bạn có muốn chia sẻ cái này không?",
+        "subject": "Do you want to",
+        "thumbnail": "/home/dev/Desktop/AI/backend-ai/files/image_files/do-you-want-to/1.jpg"
     },
     {
         "id": 56,
-        "question": "Do you want to talk to him?",
+        "english": "Do you want to talk to him?",
         "phonetic": "/du jə wɒnt tə tɔːk tə hɪm/",
-        "translation": "Bạn có muốn nói chuyện với anh ấy không?"
+        "vietnamese": "Bạn có muốn nói chuyện với anh ấy không?",
+        "subject": "Do you want to",
+        "thumbnail": "/home/dev/Desktop/AI/backend-ai/files/image_files/do-you-want-to/1.jpg"
     },
     {
         "id": 57,
-        "question": "Do you want to meet tomorrow?",
+        "english": "Do you want to meet tomorrow?",
         "phonetic": "/du jə wɒnt tə miːt təˈmɒroʊ/",
-        "translation": "Bạn có muốn gặp ngày mai không?"
+        "vietnamese": "Bạn có muốn gặp ngày mai không?",
+        "subject": "Do you want to",
+        "thumbnail": "/home/dev/Desktop/AI/backend-ai/files/image_files/do-you-want-to/1.jpg"
     },
     {
         "id": 58,
-        "question": "Do you want to go to bed?",
+        "english": "Do you want to go to bed?",
         "phonetic": "/du jə wɒnt tə ɡoʊ tə bed/",
-        "translation": "Bạn có muốn đi ngủ không?"
+        "vietnamese": "Bạn có muốn đi ngủ không?",
+        "subject": "Do you want to",
+        "thumbnail": "/home/dev/Desktop/AI/backend-ai/files/image_files/do-you-want-to/1.jpg"
     },
     {
         "id": 59,
-        "question": "Do you want to exercise today?",
+        "english": "Do you want to exercise today?",
         "phonetic": "/du jə wɒnt tə ˈeksərsaɪz təˈdeɪ/",
-        "translation": "Bạn có muốn tập thể dục hôm nay không?"
+        "vietnamese": "Bạn có muốn tập thể dục hôm nay không?",
+        "subject": "Do you want to",
+        "thumbnail": "/home/dev/Desktop/AI/backend-ai/files/image_files/do-you-want-to/1.jpg"
     },
     {
         "id": 60,
-        "question": "Do you want to watch the sunset?",
+        "english": "Do you want to watch the sunset?",
         "phonetic": "/du jə wɒnt tə wɒtʃ ðə ˈsʌnset/",
-        "translation": "Bạn có muốn xem hoàng hôn không?"
+        "vietnamese": "Bạn có muốn xem hoàng hôn không?",
+        "subject": "Do you want to",
+        "thumbnail": "/home/dev/Desktop/AI/backend-ai/files/image_files/do-you-want-to/1.jpg"
     },
     {
         "id": 61,
-        "question": "Do you want to play cards?",
+        "english": "Do you want to play cards?",
         "phonetic": "/du jə wɒnt tə pleɪ kɑːrdz/",
-        "translation": "Bạn có muốn chơi bài không?"
+        "vietnamese": "Bạn có muốn chơi bài không?",
+        "subject": "Do you want to",
+        "thumbnail": "/home/dev/Desktop/AI/backend-ai/files/image_files/do-you-want-to/1.jpg"
     },
     {
         "id": 62,
-        "question": "Do you want to visit the park?",
+        "english": "Do you want to visit the park?",
         "phonetic": "/du jə wɒnt tə ˈvɪzɪt ðə pɑːrk/",
-        "translation": "Bạn có muốn thăm công viên không?"
+        "vietnamese": "Bạn có muốn thăm công viên không?",
+        "subject": "Do you want to",
+        "thumbnail": "/home/dev/Desktop/AI/backend-ai/files/image_files/do-you-want-to/1.jpg"
     },
     {
         "id": 63,
-        "question": "Do you want to take a nap?",
+        "english": "Do you want to take a nap?",
         "phonetic": "/du jə wɒnt tə teɪk ə næp/",
-        "translation": "Bạn có muốn chợp mắt không?"
+        "vietnamese": "Bạn có muốn chợp mắt không?",
+        "subject": "Do you want to",
+        "thumbnail": "/home/dev/Desktop/AI/backend-ai/files/image_files/do-you-want-to/1.jpg"
     },
     {
         "id": 64,
-        "question": "Do you want to go fishing?",
+        "english": "Do you want to go fishing?",
         "phonetic": "/du jə wɒnt tə ɡoʊ ˈfɪʃɪŋ/",
-        "translation": "Bạn có muốn đi câu cá không?"
+        "vietnamese": "Bạn có muốn đi câu cá không?",
+        "subject": "Do you want to",
+        "thumbnail": "/home/dev/Desktop/AI/backend-ai/files/image_files/do-you-want-to/1.jpg"
     },
     {
         "id": 65,
-        "question": "Do you want to learn to cook?",
+        "english": "Do you want to learn to cook?",
         "phonetic": "/du jə wɒnt tə lɜːrn tə kʊk/",
-        "translation": "Bạn có muốn học nấu ăn không?"
+        "vietnamese": "Bạn có muốn học nấu ăn không?",
+        "subject": "Do you want to",
+        "thumbnail": "/home/dev/Desktop/AI/backend-ai/files/image_files/do-you-want-to/1.jpg"
     },
     {
         "id": 66,
-        "question": "Do you want to try yoga?",
+        "english": "Do you want to try yoga?",
         "phonetic": "/du jə wɒnt tə traɪ ˈjoʊɡə/",
-        "translation": "Bạn có muốn thử yoga không?"
+        "vietnamese": "Bạn có muốn thử yoga không?",
+        "subject": "Do you want to",
+        "thumbnail": "/home/dev/Desktop/AI/backend-ai/files/image_files/do-you-want-to/1.jpg"
     },
     {
         "id": 67,
-        "question": "Do you want to watch a game?",
+        "english": "Do you want to watch a game?",
         "phonetic": "/du jə wɒnt tə wɒtʃ ə ɡeɪm/",
-        "translation": "Bạn có muốn xem một trận đấu không?"
+        "vietnamese": "Bạn có muốn xem một trận đấu không?",
+        "subject": "Do you want to",
+        "thumbnail": "/home/dev/Desktop/AI/backend-ai/files/image_files/do-you-want-to/1.jpg"
     },
     {
         "id": 68,
-        "question": "Do you want to go camping?",
+        "english": "Do you want to go camping?",
         "phonetic": "/du jə wɒnt tə ɡoʊ ˈkæmpɪŋ/",
-        "translation": "Bạn có muốn đi cắm trại không?"
+        "vietnamese": "Bạn có muốn đi cắm trại không?",
+        "subject": "Do you want to",
+        "thumbnail": "/home/dev/Desktop/AI/backend-ai/files/image_files/do-you-want-to/1.jpg"
     },
     {
         "id": 69,
-        "question": "Do you want to call your mom?",
+        "english": "Do you want to call your mom?",
         "phonetic": "/du jə wɒnt tə kɔːl jɔːr mɒm/",
-        "translation": "Bạn có muốn gọi cho mẹ bạn không?"
+        "vietnamese": "Bạn có muốn gọi cho mẹ bạn không?",
+        "subject": "Do you want to",
+        "thumbnail": "/home/dev/Desktop/AI/backend-ai/files/image_files/do-you-want-to/1.jpg"
     },
     {
         "id": 70,
-        "question": "Do you want to eat out?",
+        "english": "Do you want to eat out?",
         "phonetic": "/du jə wɒnt tə iːt aʊt/",
-        "translation": "Bạn có muốn ăn ngoài không?"
+        "vietnamese": "Bạn có muốn ăn ngoài không?",
+        "subject": "Do you want to",
+        "thumbnail": "/home/dev/Desktop/AI/backend-ai/files/image_files/do-you-want-to/1.jpg"
     },
     {
         "id": 71,
-        "question": "Do you want to take a shower?",
+        "english": "Do you want to take a shower?",
         "phonetic": "/du jə wɒnt tə teɪk ə ˈʃaʊər/",
-        "translation": "Bạn có muốn tắm không?"
+        "vietnamese": "Bạn có muốn tắm không?",
+        "subject": "Do you want to",
+        "thumbnail": "/home/dev/Desktop/AI/backend-ai/files/image_files/do-you-want-to/1.jpg"
     },
     {
         "id": 72,
-        "question": "Do you want to visit the beach?",
+        "english": "Do you want to visit the beach?",
         "phonetic": "/du jə wɒnt tə ˈvɪzɪt ðə biːtʃ/",
-        "translation": "Bạn có muốn đến bãi biển không?"
+        "vietnamese": "Bạn có muốn đến bãi biển không?",
+        "subject": "Do you want to",
+        "thumbnail": "/home/dev/Desktop/AI/backend-ai/files/image_files/do-you-want-to/1.jpg"
     },
     {
         "id": 73,
-        "question": "Do you want to play music?",
+        "english": "Do you want to play music?",
         "phonetic": "/du jə wɒnt tə pleɪ ˈmjuːzɪk/",
-        "translation": "Bạn có muốn chơi nhạc không?"
+        "vietnamese": "Bạn có muốn chơi nhạc không?",
+        "subject": "Do you want to",
+        "thumbnail": "/home/dev/Desktop/AI/backend-ai/files/image_files/do-you-want-to/1.jpg"
     },
     {
         "id": 74,
-        "question": "Do you want to go jogging?",
+        "english": "Do you want to go jogging?",
         "phonetic": "/du jə wɒnt tə ɡoʊ ˈdʒɒɡɪŋ/",
-        "translation": "Bạn có muốn đi chạy bộ không?"
+        "vietnamese": "Bạn có muốn đi chạy bộ không?",
+        "subject": "Do you want to",
+        "thumbnail": "/home/dev/Desktop/AI/backend-ai/files/image_files/do-you-want-to/1.jpg"
     },
     {
         "id": 75,
-        "question": "Do you want to watch a show?",
+        "english": "Do you want to watch a show?",
         "phonetic": "/du jə wɒnt tə wɒtʃ ə ʃoʊ/",
-        "translation": "Bạn có muốn xem một chương trình không?"
+        "vietnamese": "Bạn có muốn xem một chương trình không?",
+        "subject": "Do you want to",
+        "thumbnail": "/home/dev/Desktop/AI/backend-ai/files/image_files/do-you-want-to/1.jpg"
     },
     {
         "id": 76,
-        "question": "Do you want to learn a language?",
+        "english": "Do you want to learn a language?",
         "phonetic": "/du jə wɒnt tə lɜːrn ə ˈlæŋɡwɪdʒ/",
-        "translation": "Bạn có muốn học một ngôn ngữ không?"
+        "vietnamese": "Bạn có muốn học một ngôn ngữ không?",
+        "subject": "Do you want to",
+        "thumbnail": "/home/dev/Desktop/AI/backend-ai/files/image_files/do-you-want-to/1.jpg"
     },
     {
         "id": 77,
-        "question": "Do you want to take a class?",
+        "english": "Do you want to take a class?",
         "phonetic": "/du jə wɒnt tə teɪk ə klæs/",
-        "translation": "Bạn có muốn tham gia một lớp học không?"
+        "vietnamese": "Bạn có muốn tham gia một lớp học không?",
+        "subject": "Do you want to",
+        "thumbnail": "/home/dev/Desktop/AI/backend-ai/files/image_files/do-you-want-to/1.jpg"
     },
     {
         "id": 78,
-        "question": "Do you want to go to the gym?",
+        "english": "Do you want to go to the gym?",
         "phonetic": "/du jə wɒnt tə ɡoʊ tə ðə dʒɪm/",
-        "translation": "Bạn có muốn đến phòng gym không?"
+        "vietnamese": "Bạn có muốn đến phòng gym không?",
+        "subject": "Do you want to",
+        "thumbnail": "/home/dev/Desktop/AI/backend-ai/files/image_files/do-you-want-to/1.jpg"
     },
     {
         "id": 79,
-        "question": "Do you want to try dancing?",
+        "english": "Do you want to try dancing?",
         "phonetic": "/du jə wɒnt tə traɪ ˈdænsɪŋ/",
-        "translation": "Bạn có muốn thử nhảy không?"
+        "vietnamese": "Bạn có muốn thử nhảy không?",
+        "subject": "Do you want to",
+        "thumbnail": "/home/dev/Desktop/AI/backend-ai/files/image_files/do-you-want-to/1.jpg"
     },
     {
         "id": 80,
-        "question": "Do you want to visit a friend?",
+        "english": "Do you want to visit a friend?",
         "phonetic": "/du jə wɒnt tə ˈvɪzɪt ə frend/",
-        "translation": "Bạn có muốn thăm một người bạn không?"
+        "vietnamese": "Bạn có muốn thăm một người bạn không?",
+        "subject": "Do you want to",
+        "thumbnail": "/home/dev/Desktop/AI/backend-ai/files/image_files/do-you-want-to/1.jpg"
     },
     {
         "id": 81,
-        "question": "Do you want to play chess?",
+        "english": "Do you want to play chess?",
         "phonetic": "/du jə wɒnt tə pleɪ tʃes/",
-        "translation": "Bạn có muốn chơi cờ vua không?"
+        "vietnamese": "Bạn có muốn chơi cờ vua không?",
+        "subject": "Do you want to",
+        "thumbnail": "/home/dev/Desktop/AI/backend-ai/files/image_files/do-you-want-to/1.jpg"
     },
     {
         "id": 82,
-        "question": "Do you want to go to a party?",
+        "english": "Do you want to go to a party?",
         "phonetic": "/du jə wɒnt tə ɡoʊ tə ə ˈpɑːrti/",
-        "translation": "Bạn có muốn đến một bữa tiệc không?"
+        "vietnamese": "Bạn có muốn đến một bữa tiệc không?",
+        "subject": "Do you want to",
+        "thumbnail": "/home/dev/Desktop/AI/backend-ai/files/image_files/do-you-want-to/1.jpg"
     },
     {
         "id": 83,
-        "question": "Do you want to watch the stars?",
+        "english": "Do you want to watch the stars?",
         "phonetic": "/du jə wɒnt tə wɒtʃ ðə stɑːrz/",
-        "translation": "Bạn có muốn ngắm sao không?"
+        "vietnamese": "Bạn có muốn ngắm sao không?",
+        "subject": "Do you want to",
+        "thumbnail": "/home/dev/Desktop/AI/backend-ai/files/image_files/do-you-want-to/1.jpg"
     },
     {
         "id": 84,
-        "question": "Do you want to try a new restaurant?",
+        "english": "Do you want to try a new restaurant?",
         "phonetic": "/du jə wɒnt tə traɪ ə njuː ˈrestrɒnt/",
-        "translation": "Bạn có muốn thử một nhà hàng mới không?"
+        "vietnamese": "Bạn có muốn thử một nhà hàng mới không?",
+        "subject": "Do you want to",
+        "thumbnail": "/home/dev/Desktop/AI/backend-ai/files/image_files/do-you-want-to/1.jpg"
     },
     {
         "id": 85,
-        "question": "Do you want to go skiing?",
+        "english": "Do you want to go skiing?",
         "phonetic": "/du jə wɒnt tə ɡoʊ ˈskiːɪŋ/",
-        "translation": "Bạn có muốn đi trượt tuyết không?"
+        "vietnamese": "Bạn có muốn đi trượt tuyết không?",
+        "subject": "Do you want to",
+        "thumbnail": "/home/dev/Desktop/AI/backend-ai/files/image_files/do-you-want-to/1.jpg"
     },
     {
         "id": 86,
-        "question": "Do you want to read the news?",
+        "english": "Do you want to read the news?",
         "phonetic": "/du jə wɒnt tə riːd ðə njuːz/",
-        "translation": "Bạn có muốn đọc tin tức không?"
+        "vietnamese": "Bạn có muốn đọc tin tức không?",
+        "subject": "Do you want to",
+        "thumbnail": "/home/dev/Desktop/AI/backend-ai/files/image_files/do-you-want-to/1.jpg"
     },
     {
         "id": 87,
-        "question": "Do you want to take a trip?",
+        "english": "Do you want to take a trip?",
         "phonetic": "/du jə wɒnt tə teɪk ə trɪp/",
-        "translation": "Bạn có muốn đi du lịch không?"
+        "vietnamese": "Bạn có muốn đi du lịch không?",
+        "subject": "Do you want to",
+        "thumbnail": "/home/dev/Desktop/AI/backend-ai/files/image_files/do-you-want-to/1.jpg"
     },
     {
         "id": 88,
-        "question": "Do you want to watch a concert?",
+        "english": "Do you want to watch a concert?",
         "phonetic": "/du jə wɒnt tə wɒtʃ ə ˈkɒnsərt/",
-        "translation": "Bạn có muốn xem buổi hòa nhạc không?"
+        "vietnamese": "Bạn có muốn xem buổi hòa nhạc không?",
+        "subject": "Do you want to",
+        "thumbnail": "/home/dev/Desktop/AI/backend-ai/files/image_files/do-you-want-to/1.jpg"
     },
     {
         "id": 89,
-        "question": "Do you want to go to school?",
+        "english": "Do you want to go to school?",
         "phonetic": "/du jə wɒnt tə ɡoʊ tə skuːl/",
-        "translation": "Bạn có muốn đến trường không?"
+        "vietnamese": "Bạn có muốn đến trường không?",
+        "subject": "Do you want to",
+        "thumbnail": "/home/dev/Desktop/AI/backend-ai/files/image_files/do-you-want-to/1.jpg"
     },
     {
         "id": 90,
-        "question": "Do you want to try painting?",
+        "english": "Do you want to try painting?",
         "phonetic": "/du jə wɒnt tə traɪ ˈpeɪntɪŋ/",
-        "translation": "Bạn có muốn thử vẽ tranh không?"
+        "vietnamese": "Bạn có muốn thử vẽ tranh không?",
+        "subject": "Do you want to",
+        "thumbnail": "/home/dev/Desktop/AI/backend-ai/files/image_files/do-you-want-to/1.jpg"
     },
     {
         "id": 91,
-        "question": "Do you want to visit the zoo?",
+        "english": "Do you want to visit the zoo?",
         "phonetic": "/du jə wɒnt tə ˈvɪzɪt ðə zuː/",
-        "translation": "Bạn có muốn thăm sở thú không?"
+        "vietnamese": "Bạn có muốn thăm sở thú không?",
+        "subject": "Do you want to",
+        "thumbnail": "/home/dev/Desktop/AI/backend-ai/files/image_files/do-you-want-to/1.jpg"
     },
     {
         "id": 92,
-        "question": "Do you want to play tennis?",
+        "english": "Do you want to play tennis?",
         "phonetic": "/du jə wɒnt tə pleɪ ˈtenɪs/",
-        "translation": "Bạn có muốn chơi tennis không?"
+        "vietnamese": "Bạn có muốn chơi tennis không?",
+        "subject": "Do you want to",
+        "thumbnail": "/home/dev/Desktop/AI/backend-ai/files/image_files/do-you-want-to/1.jpg"
     },
     {
         "id": 93,
-        "question": "Do you want to go to the mall?",
+        "english": "Do you want to go to the mall?",
         "phonetic": "/du jə wɒnt tə ɡoʊ tə ðə mɔːl/",
-        "translation": "Bạn có muốn đến trung tâm thương mại không?"
+        "vietnamese": "Bạn có muốn đến trung tâm thương mại không?",
+        "subject": "Do you want to",
+        "thumbnail": "/home/dev/Desktop/AI/backend-ai/files/image_files/do-you-want-to/1.jpg"
     },
     {
         "id": 94,
-        "question": "Do you want to watch a play?",
+        "english": "Do you want to watch a play?",
         "phonetic": "/du jə wɒnt tə wɒtʃ ə pleɪ/",
-        "translation": "Bạn có muốn xem một vở kịch không?"
+        "vietnamese": "Bạn có muốn xem một vở kịch không?",
+        "subject": "Do you want to",
+        "thumbnail": "/home/dev/Desktop/AI/backend-ai/files/image_files/do-you-want-to/1.jpg"
     },
     {
         "id": 95,
-        "question": "Do you want to try cooking?",
+        "english": "Do you want to try cooking?",
         "phonetic": "/du jə wɒnt tə traɪ ˈkʊkɪŋ/",
-        "translation": "Bạn có muốn thử nấu ăn không?"
+        "vietnamese": "Bạn có muốn thử nấu ăn không?",
+        "subject": "Do you want to",
+        "thumbnail": "/home/dev/Desktop/AI/backend-ai/files/image_files/do-you-want-to/1.jpg"
     },
     {
         "id": 96,
-        "question": "Do you want to go to work?",
+        "english": "Do you want to go to work?",
         "phonetic": "/du jə wɒnt tə ɡoʊ tə wɜːrk/",
-        "translation": "Bạn có muốn đi làm không?"
+        "vietnamese": "Bạn có muốn đi làm không?",
+        "subject": "Do you want to",
+        "thumbnail": "/home/dev/Desktop/AI/backend-ai/files/image_files/do-you-want-to/1.jpg"
     },
     {
         "id": 97,
-        "question": "Do you want to visit the city?",
+        "english": "Do you want to visit the city?",
         "phonetic": "/du jə wɒnt tə ˈvɪzɪt ðə ˈsɪti/",
-        "translation": "Bạn có muốn thăm thành phố không?"
+        "vietnamese": "Bạn có muốn thăm thành phố không?",
+        "subject": "Do you want to",
+        "thumbnail": "/home/dev/Desktop/AI/backend-ai/files/image_files/do-you-want-to/1.jpg"
     },
     {
         "id": 98,
-        "question": "Do you want to play a video game?",
+        "english": "Do you want to play a video game?",
         "phonetic": "/du jə wɒnt tə pleɪ ə ˈvɪdioʊ ɡeɪm/",
-        "translation": "Bạn có muốn chơi trò chơi điện tử không?"
+        "vietnamese": "Bạn có muốn chơi trò chơi điện tử không?",
+        "subject": "Do you want to",
+        "thumbnail": "/home/dev/Desktop/AI/backend-ai/files/image_files/do-you-want-to/1.jpg"
     },
     {
         "id": 99,
-        "question": "Do you want to go to the library?",
+        "english": "Do you want to go to the library?",
         "phonetic": "/du jə wɒnt tə ɡoʊ tə ðə ˈlaɪbrəri/",
-        "translation": "Bạn có muốn đến thư viện không?"
+        "vietnamese": "Bạn có muốn đến thư viện không?",
+        "subject": "Do you want to",
+        "thumbnail": "/home/dev/Desktop/AI/backend-ai/files/image_files/do-you-want-to/1.jpg"
     },
     {
         "id": 100,
-        "question": "Do you want to relax today?",
+        "english": "Do you want to relax today?",
         "phonetic": "/du jə wɒnt tə rɪˈlæks təˈdeɪ/",
-        "translation": "Bạn có muốn thư giãn hôm nay không?"
+        "vietnamese": "Bạn có muốn thư giãn hôm nay không?",
+        "subject": "Do you want to",
+        "thumbnail": "/home/dev/Desktop/AI/backend-ai/files/image_files/do-you-want-to/1.jpg"
     }
 ]
