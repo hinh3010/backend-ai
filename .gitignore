@@ -23,6 +23,4 @@ coverage/
 .DS_Store
 Thumbs.db
 
-audio_files
-
-video_files
+draft_files
