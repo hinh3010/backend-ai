@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const { slugify } = require('../helper/slugify');
 const Bluebird = require('bluebird');
-const { toTTSAdvanced } = require('../helper/tts');
+const { toTTSWithGG } = require('../helper/tts');
 const { mergeAudioFiles } = require('../helper/merge_mp3');
 const _ = require('lodash');
 
@@ -19,13 +19,13 @@ const ensureDirectoryExists = (dirPath) => {
     }
 };
 
-const processAudioFiles = async (fileName, fileData) => {
+const appendAudioFiles = async (fileName, fileData) => {
     const fileFilePath = path.join(audioDir, slugify(fileName));
     ensureDirectoryExists(fileFilePath);
 
-    await Bluebird.mapSeries(fileData, async (item) => {
+    return await Bluebird.mapSeries(fileData, async (item) => {
         const { english, vietnamese } = item;
-        const mp3Files = await generateTTSFiles(english, vietnamese);
+        const mp3Files = await generateTTSFiles({ english, vietnamese });
 
         try {
             const mergedAudioFile = path.join(fileFilePath, `${slugify(english)}_merge.mp3`);
@@ -39,19 +39,39 @@ const processAudioFiles = async (fileName, fileData) => {
                 throw new Error(`Merged audio file does not exist: ${mergedAudioFile}`);
             }
             console.log(`Merged audio file: ${mergedAudioFile}`);
+
+            return {
+                ...item,
+                audio: mergedAudioFile
+            }
         } catch (error) {
-            console.log({ error: error.message });
-            throw error;
+            return {
+                ...item,
+                error: `[AUDIO] ${error.message}`
+            }
         } finally {
             cleanupFiles(mp3Files);
         }
     });
 };
 
-const generateTTSFiles = async (english, vietnamese) => {
+// const generateTTSFiles = async ({ english, vietnamese }) => {
+//     const outputFolder = path.join(fileFilePath, `${slugify(english)}`);
+//     const voices = [
+//         { name: "en-US-ChristopherNeural", rate: "+0%", suffix: "en_male_normal", text: english },
+//         { name: "en-US-MichelleNeural", rate: "+0%", suffix: "en_female_normal", text: english },
+//         { name: "vi-VN-HoaiMyNeural", rate: "+0%", suffix: "vn_female_normal", text: vietnamese },
+//     ];
+
+//     const result = await Bluebird.mapSeries(voices, async voice => toTTSWithMsEdge(voice, outputFolder));
+//     console.log("🚀 ~ generateTTSFiles ~ result:", result)
+//     return result
+// };
+
+const generateTTSFiles = async ({ english, vietnamese }) => {
     return Promise.all([
-        toTTSAdvanced({ text: english, lang: 'en' }),
-        toTTSAdvanced({ text: vietnamese, lang: 'vi' })
+        toTTSWithGG({ text: english, lang: 'en' }),
+        toTTSWithGG({ text: vietnamese, lang: 'vi' })
     ]);
 };
 
@@ -73,13 +93,19 @@ const handler = async (fileNames) => {
             return;
         }
 
-        const fileData = require(jsonFilePath);
-        if (!Array.isArray(fileData) || !fileData.length) {
+        const jsonData = require(jsonFilePath);
+        if (!Array.isArray(jsonData) || !jsonData.length) {
             console.log(`Error processing file: ${fileName} (invalid data)`);
             return;
         }
 
-        await processAudioFiles(fileName, fileData);
+        const newJsonData = await appendAudioFiles(fileName, jsonData);
+
+        await fs.promises.writeFile(
+            jsonFilePath,
+            JSON.stringify(newJsonData, null, 4),
+            'utf-8'
+        );
     });
 
     console.log(`[Successfully]`);

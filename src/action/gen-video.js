@@ -1,106 +1,99 @@
-const { Worker } = require('worker_threads');
-const fs = require('fs');
-const path = require('path');
+const { exec } = require('child_process');
+const util = require('util');
+const execPromise = util.promisify(exec);
 
-const config = [
-    {
-        "english": "Do you want to come over?",
-        "phonetic": "/du jə wɒnt tə kʌm ˈoʊvər/",
-        "vietnamese": "Bạn có muốn đến chơi không?",
-        "subject": "Do you want to",
-        "thumbnail": "1.png"
+// Function to generate video from image and audio
+const generateVideo = async (imagePath, audioPath, outputPath) => {
+    try {
+        // Command to combine image and audio into a video using ffmpeg
+        const command = `ffmpeg -loop 1 -i "${imagePath}" -i "${audioPath}" -c:v libx264 -tune stillimage -c:a aac -b:a 192k -pix_fmt yuv420p -shortest "${outputPath}"`;
+
+        await execPromise(command);
+        console.log(`Video created successfully: ${outputPath}`);
+        return outputPath;
+    } catch (error) {
+        console.error(`Error generating video: ${error.message}`);
+        throw error;
     }
-]
+};
 
-// Define directories for different file types
-// eslint-disable-next-line no-undef
-const audioDir = path.join(__dirname, '../../files/audio_files');
-// eslint-disable-next-line no-undef
-const imageDir = path.join(__dirname, '../../files/image_files');
-// eslint-disable-next-line no-undef
-const videoDir = path.join(__dirname, '../../files/video_files');
-// eslint-disable-next-line no-undef
-const libDir = path.join(__dirname, '../../files/lib');
+// Main handler2 function
+const handler2 = async (fileNames) => {
+    // Assuming images are stored in a directory structure similar to audio
+    // eslint-disable-next-line no-undef
+    const imageDir = path.join(__dirname, '../../files/image_files');
+    // eslint-disable-next-line no-undef
+    const videoDir = path.join(__dirname, '../../files/video_files');
 
-fs.mkdirSync(audioDir, { recursive: true });
-fs.mkdirSync(videoDir, { recursive: true });
-fs.mkdirSync(imageDir, { recursive: true });
+    ensureDirectoryExists(videoDir);
 
-const MAX_WORKERS = 2;
-let activeWorkers = 0;
-const queue = [];
+    await Bluebird.mapSeries(fileNames, async (fileName) => {
+        const slugifyFileName = `${slugify(fileName)}.json`;
+        const jsonFilePath = path.join(jsonDir, slugifyFileName);
 
-/**
- * Processes an item using a worker thread.
- * @param {Object} item - The item to be processed.
- * @param {string} item.english - The English name of the item.
- * @returns {Promise<any>} A promise that resolves when the worker finishes processing.
- */
-function processItem(item) {
-    return new Promise((resolve, reject) => {
-        const worker = new Worker('./src/worker/gen-video.js', {
-            workerData: {
-                item,
-                audioDir,
-                imageDir,
-                videoDir,
-                libDir
+        if (!fs.existsSync(jsonFilePath)) {
+            console.log(`JSON file not found: ${jsonFilePath}`);
+            return;
+        }
+
+        // Load JSON data that now includes audio paths from handler function
+        const jsonData = require(jsonFilePath);
+        if (!Array.isArray(jsonData) || !jsonData.length) {
+            console.log(`Error processing file: ${fileName} (invalid data)`);
+            return;
+        }
+
+        // Create directory for videos
+        const fileFilePath = path.join(videoDir, slugify(fileName));
+        ensureDirectoryExists(fileFilePath);
+
+        // Process each item to create videos
+        const updatedJsonData = await Bluebird.mapSeries(jsonData, async (item) => {
+            const { english, audio, image } = item;
+
+            // Skip if audio doesn't exist or if there was an error
+            if (!audio || item.error) {
+                console.log(`Skipping video creation for "${english}" due to missing audio or previous error`);
+                return item;
+            }
+
+            try {
+                // Construct image path (assuming similar structure to audio)
+                // You might need to adjust this based on your actual image storage structure
+                const imagePath = image || path.join(imageDir, slugify(fileName), `${slugify(english)}.jpg`);
+
+                if (!fs.existsSync(imagePath)) {
+                    throw new Error(`Image file not found: ${imagePath}`);
+                }
+
+                // Create output path for video
+                const videoOutputPath = path.join(fileFilePath, `${slugify(english)}.mp4`);
+
+                // Generate video by combining image and audio
+                await generateVideo(imagePath, audio, videoOutputPath);
+
+                return {
+                    ...item,
+                    video: videoOutputPath
+                };
+            } catch (error) {
+                return {
+                    ...item,
+                    error: item.error ? `${item.error}, [VIDEO] ${error.message}` : `[VIDEO] ${error.message}`
+                };
             }
         });
 
-        worker.on('message', (msg) => {
-            if (typeof msg === 'string') {
-                console.log(msg);
-            } else if (msg.type === 'result') {
-                resolve(msg.result);
-            } else if (msg.type === 'error') {
-                reject(new Error(msg.error));
-            }
-        });
-
-        worker.on('error', (err) => {
-            console.error(`❌ Worker encountered an error while processing "${item.english}":`, err);
-            reject(err);
-        });
-
-        worker.on('exit', (code) => {
-            activeWorkers--;
-            if (code !== 0) {
-                reject(new Error(`Worker exited with error code ${code}`));
-            }
-            processQueue();
-        });
-    });
-}
-
-/**
- * Processes the next item in the queue if there are available workers.
- */
-function processQueue() {
-    if (queue.length > 0 && activeWorkers < MAX_WORKERS) {
-        const item = queue.shift();
-        activeWorkers++;
-        processItem(item)
-            .then(result => {
-                console.log(`✅ Successfully processed "${item.english}" | result: ${JSON.stringify(result)}`);
-            })
-            .catch(error => {
-                console.error(`❌ Error processing "${item.english}":`, error);
-            });
-    }
-}
-
-/**
- * Initializes the processing of items from the configuration.
- */
-(async () => {
-    console.log(`🚀 Starting to process ${config.length} items...`);
-
-    config.forEach(item => {
-        queue.push(item);
+        // Save updated JSON data with video paths
+        await fs.promises.writeFile(
+            jsonFilePath,
+            JSON.stringify(updatedJsonData, null, 4),
+            'utf-8'
+        );
     });
 
-    for (let i = 0; i < Math.min(MAX_WORKERS, queue.length); i++) {
-        processQueue();
-    }
-})();
+    console.log(`[Video Generation Completed Successfully]`);
+};
+
+// Example usage
+// handler2(['Do you want to']);
