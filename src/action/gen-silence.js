@@ -31,6 +31,6 @@ function genSilence(ms = 2) {
     });
 }
 
-genSilence(3)
+genSilence(1)
     .then(() => console.log('Silence generation complete'))
     .catch(err => console.error('Failed to generate silence:', err));

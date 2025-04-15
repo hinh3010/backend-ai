@@ -5,26 +5,22 @@ const Bluebird = require('bluebird');
 const { toTTSWithGG } = require('../helper/tts');
 const { mergeAudioFiles } = require('../helper/merge_mp3');
 const _ = require('lodash');
+const { ensureDirectoryExists } = require('../helper/file');
 
 // eslint-disable-next-line no-undef
 const audioDir = path.join(__dirname, '../../files/audio_files');
 // eslint-disable-next-line no-undef
-const libDir = path.join(__dirname, '../../files/lib');
-// eslint-disable-next-line no-undef
 const jsonDir = path.join(__dirname, '../../files/json_files');
-
-const ensureDirectoryExists = (dirPath) => {
-    if (!fs.existsSync(dirPath)) {
-        fs.mkdirSync(dirPath, { recursive: true });
-    }
-};
 
 const appendAudioFiles = async (fileName, fileData) => {
     const fileFilePath = path.join(audioDir, slugify(fileName));
+
     ensureDirectoryExists(fileFilePath);
 
     return await Bluebird.mapSeries(fileData, async (item) => {
-        const { english, vietnamese } = item;
+        const { english, vietnamese, id } = item;
+        console.log(`[GEN_AUDIO] id: ${id}`)
+
         const mp3Files = await generateTTSFiles({ english, vietnamese });
 
         try {
@@ -32,13 +28,12 @@ const appendAudioFiles = async (fileName, fileData) => {
             await mergeAudioFiles({
                 inputFiles: mp3Files,
                 outputFile: mergedAudioFile,
-                silenceFile: path.join(libDir, 'silence_3s.mp3')
             });
 
             if (!fs.existsSync(mergedAudioFile)) {
                 throw new Error(`Merged audio file does not exist: ${mergedAudioFile}`);
             }
-            console.log(`Merged audio file: ${mergedAudioFile}`);
+            console.log(`[GEN_AUDIO] Merged audio file: ${mergedAudioFile}`);
 
             return {
                 ...item,
@@ -47,7 +42,7 @@ const appendAudioFiles = async (fileName, fileData) => {
         } catch (error) {
             return {
                 ...item,
-                error: `[AUDIO] ${error.message}`
+                error: `[GEN_AUDIO] ${error.message}`
             }
         } finally {
             cleanupFiles(mp3Files);

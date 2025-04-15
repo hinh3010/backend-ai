@@ -1,31 +1,18 @@
-const { exec } = require('child_process');
-const util = require('util');
-const execPromise = util.promisify(exec);
+const { slugify } = require('../helper/slugify');
+const path = require('path');
+const fs = require('fs');
+const Bluebird = require('bluebird');
+const { ensureDirectoryExists } = require('../helper/file');
+const { createVideoFromImageAndAudio } = require('../helper/create-video');
 
-// Function to generate video from image and audio
-const generateVideo = async (imagePath, audioPath, outputPath) => {
-    try {
-        // Command to combine image and audio into a video using ffmpeg
-        const command = `ffmpeg -loop 1 -i "${imagePath}" -i "${audioPath}" -c:v libx264 -tune stillimage -c:a aac -b:a 192k -pix_fmt yuv420p -shortest "${outputPath}"`;
+// eslint-disable-next-line no-undef
+const jsonDir = path.join(__dirname, '../../files/json_files');
 
-        await execPromise(command);
-        console.log(`Video created successfully: ${outputPath}`);
-        return outputPath;
-    } catch (error) {
-        console.error(`Error generating video: ${error.message}`);
-        throw error;
-    }
-};
 
-// Main handler2 function
-const handler2 = async (fileNames) => {
-    // Assuming images are stored in a directory structure similar to audio
-    // eslint-disable-next-line no-undef
-    const imageDir = path.join(__dirname, '../../files/image_files');
+const handler = async (fileNames) => {
+    console.log({adu: true})
     // eslint-disable-next-line no-undef
     const videoDir = path.join(__dirname, '../../files/video_files');
-
-    ensureDirectoryExists(videoDir);
 
     await Bluebird.mapSeries(fileNames, async (fileName) => {
         const slugifyFileName = `${slugify(fileName)}.json`;
@@ -49,51 +36,71 @@ const handler2 = async (fileNames) => {
 
         // Process each item to create videos
         const updatedJsonData = await Bluebird.mapSeries(jsonData, async (item) => {
-            const { english, audio, image } = item;
+            const { english, audio: audioFile, thumbnail: imageFile, error, id } = item;
+            console.log(`[GEN_VIDEO] id: ${id}`)
+
+            if (id > 3) return
+
+            if (error) {
+                console.log(`[GEN_VIDEO] Skipping video creation for "${english}" due to previous error`);
+                return item
+            }
 
             // Skip if audio doesn't exist or if there was an error
-            if (!audio || item.error) {
-                console.log(`Skipping video creation for "${english}" due to missing audio or previous error`);
-                return item;
+            if (!audioFile || !imageFile) {
+                console.log(`[GEN_VIDEO] Skipping video creation for "${english}" due to missing audio or missing thumbnail`);
+                return {
+                    ...item,
+                    error: `[GEN_AUDIO] missing audio or missing thumbnail`
+                }
             }
 
             try {
-                // Construct image path (assuming similar structure to audio)
-                // You might need to adjust this based on your actual image storage structure
-                const imagePath = image || path.join(imageDir, slugify(fileName), `${slugify(english)}.jpg`);
-
-                if (!fs.existsSync(imagePath)) {
-                    throw new Error(`Image file not found: ${imagePath}`);
+                if (!fs.existsSync(audioFile)) {
+                    throw new Error(`Audio file not found: ${audioFile}`);
                 }
 
-                // Create output path for video
-                const videoOutputPath = path.join(fileFilePath, `${slugify(english)}.mp4`);
+                if (!fs.existsSync(imageFile)) {
+                    throw new Error(`Thumbnail file not found: ${imageFile}`);
+                }
+
+                const outputFile = path.join(fileFilePath, `${slugify(english)}.mp4`);
+
+                if (fs.existsSync(outputFile)) {
+                    fs.unlinkSync(outputFile);
+                }
 
                 // Generate video by combining image and audio
-                await generateVideo(imagePath, audio, videoOutputPath);
+                await createVideoFromImageAndAudio({
+                    audioFile,
+                    imageFile,
+                    outputFile
+                });
 
                 return {
                     ...item,
-                    video: videoOutputPath
+                    video: outputFile
                 };
             } catch (error) {
                 return {
                     ...item,
-                    error: item.error ? `${item.error}, [VIDEO] ${error.message}` : `[VIDEO] ${error.message}`
+                    error: `[GEN_AUDIO] ${error.message}`
                 };
             }
         });
 
         // Save updated JSON data with video paths
-        await fs.promises.writeFile(
-            jsonFilePath,
-            JSON.stringify(updatedJsonData, null, 4),
-            'utf-8'
-        );
+        // await fs.promises.writeFile(
+        //     jsonFilePath,
+        //     JSON.stringify(updatedJsonData, null, 4),
+        //     'utf-8'
+        // );
     });
 
     console.log(`[Video Generation Completed Successfully]`);
+    // eslint-disable-next-line no-undef
+    process.exit(1)
 };
 
 // Example usage
-// handler2(['Do you want to']);
+handler(['Do you want to']).catch(console.log);

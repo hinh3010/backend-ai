@@ -1,5 +1,6 @@
 const ffmpeg = require('fluent-ffmpeg');
 const fs = require('fs');
+const path = require('path');
 
 function addSilence(silenceFile) {
     return new Promise((resolve) => {
@@ -17,21 +18,29 @@ function addSilence(silenceFile) {
     });
 }
 
+// eslint-disable-next-line no-undef
+const libDir = path.join(__dirname, '../../files/lib');
+
 // Merge files
-exports.mergeAudioFiles = async ({ inputFiles, outputFile, silenceFile }) => {
+exports.mergeAudioFiles = async ({ inputFiles, outputFile }) => {
+    const silence1s = path.join(libDir, 'silence_1s.mp3')
+    const silence2s = path.join(libDir, 'silence_2s.mp3')
+
     // Tạo file silence trước
-    await addSilence(silenceFile);
+    await addSilence(silence1s);
+    await addSilence(silence2s);
 
     return new Promise((resolve, reject) => {
         // Tạo command ffmpeg
         const command = ffmpeg();
 
-        // Thêm từng file input và silence xen kẽ
+        command.input(silence1s);
         inputFiles.forEach((file, index) => {
             command.input(file);
-            // Thêm silence sau mỗi file trừ file cuối cùng
             if (index < inputFiles.length - 1) {
-                command.input(silenceFile);
+                command.input(silence2s);
+            } else {
+                command.input(silence1s);
             }
         });
 
@@ -41,7 +50,7 @@ exports.mergeAudioFiles = async ({ inputFiles, outputFile, silenceFile }) => {
                 {
                     filter: 'concat',
                     options: {
-                        n: inputFiles.length * 2 - 1, // Số segment (file + silence)
+                        n: inputFiles.length * 2 + 1, // Số segment (file + silence)
                         v: 0, // Không có video
                         a: 1  // Có audio
                     },
