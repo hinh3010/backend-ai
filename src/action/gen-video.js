@@ -36,10 +36,7 @@ const handler = async (fileNames) => {
 
         // Process each item to create videos
         const updatedJsonData = await Bluebird.mapSeries(jsonData, async (item) => {
-            const { english, audio: audioFile, thumbnail: imageFile, error, id } = item;
-            console.log(`[GEN_VIDEO] id: ${id}`)
-
-            if (id > 3) return
+            const { english, audio: audioFile, thumbnail: imageFile, error } = item;
 
             if (error) {
                 console.log(`[GEN_VIDEO] Skipping video creation for "${english}" due to previous error`);
@@ -90,11 +87,11 @@ const handler = async (fileNames) => {
         });
 
         // Save updated JSON data with video paths
-        // await fs.promises.writeFile(
-        //     jsonFilePath,
-        //     JSON.stringify(updatedJsonData, null, 4),
-        //     'utf-8'
-        // );
+        await fs.promises.writeFile(
+            jsonFilePath,
+            JSON.stringify(updatedJsonData, null, 4),
+            'utf-8'
+        );
     });
 
     console.log(`[Video Generation Completed Successfully]`);
